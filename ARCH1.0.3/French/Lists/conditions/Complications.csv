@@ -1,0 +1,36 @@
+Condition,Code,Library
+Choc septique,76571007.0,SNOMED
+Syndrome de détresse respiratoire aiguë (SDRA),67782005.0,SNOMED
+Syndrome d'insuffisance rénale aiguë,14669001.0,SNOMED
+Thrombose veineuse profonde,128053003.0,SNOMED
+Embolie pulmonaire,59282003.0,SNOMED
+Infarctus du myocarde,22298006.0,SNOMED
+Accident vasculaire cérébral ischémique,422504002.0,SNOMED
+Accident vasculaire cérébral cardioembolique,413758000.0,SNOMED
+Accident vasculaire cérébral cérébelleux,1.63717810001191e+16,SNOMED
+Accident vasculaire cérébral hémorragique,1078001000000100.0,SNOMED
+Accident vasculaire cérébral thrombotique,371040005.0,SNOMED
+Saignements gastro-intestinaux récurrents,307296008.0,SNOMED
+Pneumothorax,36118008.0,SNOMED
+Coagulation intravasculaire disséminée (CIVD),67406007.0,SNOMED
+État septique,91302008.0,SNOMED
+Arrêt cardiaque,410429000.0,SNOMED
+Ischémie cérébrale transitoire,266257000.0,SNOMED
+Bactériémie,5758002.0,SNOMED
+Infection urinaire récurrente,197927001.0,SNOMED
+Pneumonie,233604007.0,SNOMED
+Hypotension transitoire,94501000000000.0,SNOMED
+Trouble acquis de la coagulation,234466008.0,SNOMED
+Gros foie,80515008.0,SNOMED
+Méningite,7180009.0,SNOMED
+Syndrome inflammatoire multisystémique chez l'adulte,1119306006.0,SNOMED
+Syndrome inflammatoire multisystémique chez l'enfant,895448002.0,SNOMED
+Encéphalite,45170000.0,SNOMED
+Pneumonie sous ventilation assistée,429271009.0,SNOMED
+Empyème,312682007.0,SNOMED
+Encéphalopathie ischémique,389100007.0,SNOMED
+Saignement,131148009.0,SNOMED
+Choc cardiogénique,89138009.0,SNOMED
+Décompensation,87228002.0,SNOMED
+Constatation neurologique,102957003.0,SNOMED
+Pneumonie contractée à l’hôpital,425464007.0,SNOMED
