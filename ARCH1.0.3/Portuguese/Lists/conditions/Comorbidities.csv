@@ -1,55 +1,55 @@
-Condition,Code,Library,Charlson,Elixhauser
-Doença do vírus da imunodeficiência humana [HIV],19030005,SNOMED,1.0,1.0
-Doença autoimune,85828009,SNOMED,,
-Doença Hematológica Crônica,398983000,SNOMED,,
-Distúrbio de coagulação sanguínea,64779008,SNOMED,,
-AVC,230690007,SNOMED,1.0,1.0
-Doença Cerebrovascular,62914000,SNOMED,1.0,1.0
-Hemiplegia,50582007,SNOMED,1.0,1.0
-Paraplegia,60389000,SNOMED,1.0,1.0
-Doença cardíaca crônica,128238001,SNOMED,,1.0
-Doença cardíaca isquêmica,414545008,SNOMED,1.0,1.0
-Fibrilação atrial,49436004,SNOMED,,1.0
-Infarto do miocárdio,22298006,SNOMED,1.0,1.0
-Insuficiência Cardíaca Congestiva,42343007,SNOMED,1.0,1.0
-Doença cardíaca congênita,13213009,SNOMED,,1.0
-Cardiomiopatia,85898001,SNOMED,,1.0
-Distúrbio da válvula cardíaca,368009,SNOMED,,1.0
-Doença inflamatória crônica,128294001,SNOMED,,
-Distúrbio metabólico crônico,128289001,SNOMED,,1.0
-Transtorno neurológico confirmado,407626008,SNOMED,,1.0
-Doença pulmonar crônica,413839001,SNOMED,,1.0
-Doença indiferenciada do tecido conjuntivo,239918008,SNOMED,,1.0
-Demência,52448006,SNOMED,1.0,1.0
-Diabetes Mellitus (todos os tipos),73211009,SNOMED,1.0,1.0
-Hipertensão essencial,59621000,SNOMED,,1.0
-Imunossupressão,38013005,SNOMED,,1.0
-Distúrbio do metabolismo lipídico,267431006,SNOMED,,1.0
-Doença do fígado,235856003,SNOMED,,1.0
-Doença hepática moderada ou grave,235856003 |Disorder of liver (disorder)|371924009 |Moderate to severe (qualifier value)|,SNOMED,1.0,1.0
-Hepatite Viral Crônica,10295004,SNOMED,,1.0
-Neoplasia maligna primária,372087000,SNOMED,1.0,1.0
-Leucemia,93143009,SNOMED,1.0,1.0
-Linfoma maligno,118600007,SNOMED,1.0,1.0
-Mieloma múltiplo,109989006,SNOMED,1.0,1.0
-Tumor carcinoide metastático Câncer,705176003,SNOMED,1.0,1.0
-Configuração de tumor sólido,369757002,SNOMED,1.0,1.0
-Doenças neurodegenerativas,80690008,SNOMED,,1.0
-Obesidade,414916001,SNOMED,,1.0
-Doença Vascular Periférica,400047006,SNOMED,1.0,1.0
-Psicoses reativas,231437006,SNOMED,,1.0
-Distúrbio da circulação pulmonar,39785005,SNOMED,,1.0
-Infecção Crônica,177010002,SNOMED,,
-Doenças raras e erros inatos do metabolismo,4121882,SNOMED,,
-Doença Renal Crônica,709044004,SNOMED,1.0,1.0
-Doença Renal Moderada ou Grave,90708001 |Kidney disease (disorder)|371924009 |Moderate to severe (qualifier value)|,SNOMED,1.0,1.0
-Insuficiência renal aguda sobre crônica,236433006,SNOMED,1.0,1.0
-Doenças reumatóides,396332003,SNOMED,1.0,1.0
-Transplante presente,737294004,SNOMED,1.0,1.0
-Asplenia,707147002,SNOMED,,1.0
-Fumar,77176002,SNOMED,,1.0
-Transtorno por uso de substâncias psicoativas,11061003,SNOMED,,1.0
-Trombose venosa profunda recorrente,710167004,SNOMED,,1.0
-Hipotireoidismo,40930008,SNOMED,,1.0
-Hipertireoidismo,34486009,SNOMED,,1.0
-Tuberculose,56717001,SNOMED,1.0,1.0
+Condition,Code,Library,Charlson,Elixhauser,Language Speaker Reviewed,Clinical Language Speaker Reviewed
+Doença do vírus da imunodeficiência humana [HIV],19030005,SNOMED,1.0,1.0,,
+Doença autoimune,85828009,SNOMED,,,,
+Doença Hematológica Crônica,398983000,SNOMED,,,,
+Distúrbio de coagulação sanguínea,64779008,SNOMED,,,,
+AVC,230690007,SNOMED,1.0,1.0,,
+Doença Cerebrovascular,62914000,SNOMED,1.0,1.0,,
+Hemiplegia,50582007,SNOMED,1.0,1.0,,
+Paraplegia,60389000,SNOMED,1.0,1.0,,
+Doença cardíaca crônica,128238001,SNOMED,,1.0,,
+Doença cardíaca isquêmica,414545008,SNOMED,1.0,1.0,,
+Fibrilação atrial,49436004,SNOMED,,1.0,,
+Infarto do miocárdio,22298006,SNOMED,1.0,1.0,,
+Insuficiência Cardíaca Congestiva,42343007,SNOMED,1.0,1.0,,
+Doença cardíaca congênita,13213009,SNOMED,,1.0,,
+Cardiomiopatia,85898001,SNOMED,,1.0,,
+Distúrbio da válvula cardíaca,368009,SNOMED,,1.0,,
+Doença inflamatória crônica,128294001,SNOMED,,,,
+Distúrbio metabólico crônico,128289001,SNOMED,,1.0,,
+Transtorno neurológico confirmado,407626008,SNOMED,,1.0,,
+Doença pulmonar crônica,413839001,SNOMED,,1.0,,
+Doença indiferenciada do tecido conjuntivo,239918008,SNOMED,,1.0,,
+Demência,52448006,SNOMED,1.0,1.0,,
+Diabetes Mellitus (todos os tipos),73211009,SNOMED,1.0,1.0,,
+Hipertensão essencial,59621000,SNOMED,,1.0,,
+Imunossupressão,38013005,SNOMED,,1.0,,
+Distúrbio do metabolismo lipídico,267431006,SNOMED,,1.0,,
+Doença do fígado,235856003,SNOMED,,1.0,,
+Doença hepática moderada ou grave,235856003 |Disorder of liver (disorder)|371924009 |Moderate to severe (qualifier value)|,SNOMED,1.0,1.0,,
+Hepatite Viral Crônica,10295004,SNOMED,,1.0,,
+Neoplasia maligna primária,372087000,SNOMED,1.0,1.0,,
+Leucemia,93143009,SNOMED,1.0,1.0,,
+Linfoma maligno,118600007,SNOMED,1.0,1.0,,
+Mieloma múltiplo,109989006,SNOMED,1.0,1.0,,
+Tumor carcinoide metastático Câncer,705176003,SNOMED,1.0,1.0,,
+Configuração de tumor sólido,369757002,SNOMED,1.0,1.0,,
+Doenças neurodegenerativas,80690008,SNOMED,,1.0,,
+Obesidade,414916001,SNOMED,,1.0,,
+Doença Vascular Periférica,400047006,SNOMED,1.0,1.0,,
+Psicoses reativas,231437006,SNOMED,,1.0,,
+Distúrbio da circulação pulmonar,39785005,SNOMED,,1.0,,
+Infecção Crônica,177010002,SNOMED,,,,
+Doenças raras e erros inatos do metabolismo,4121882,SNOMED,,,,
+Doença Renal Crônica,709044004,SNOMED,1.0,1.0,,
+Doença Renal Moderada ou Grave,90708001 |Kidney disease (disorder)|371924009 |Moderate to severe (qualifier value)|,SNOMED,1.0,1.0,,
+Insuficiência renal aguda sobre crônica,236433006,SNOMED,1.0,1.0,,
+Doenças reumatóides,396332003,SNOMED,1.0,1.0,,
+Transplante presente,737294004,SNOMED,1.0,1.0,,
+Asplenia,707147002,SNOMED,,1.0,,
+Fumar,77176002,SNOMED,,1.0,,
+Transtorno por uso de substâncias psicoativas,11061003,SNOMED,,1.0,,
+Trombose venosa profunda recorrente,710167004,SNOMED,,1.0,,
+Hipotireoidismo,40930008,SNOMED,,1.0,,
+Hipertireoidismo,34486009,SNOMED,,1.0,,
+Tuberculose,56717001,SNOMED,1.0,1.0,,

@@ -1,8 +1,8 @@
-Outcome,Selected
-Descarregado vivo,1.0
-Ainda hospitalizado,1.0
-Transferência para outra unidade,1.0
-Morte,1.0
-Cuidados paliativos,1.0
-Alta contra orientação médica,1.0
-"Vivo, não admitido",
+Outcome,Selected,Language Speaker Reviewed,Clinical Language Speaker Reviewed
+Descarregado vivo,1.0,,
+Ainda hospitalizado,1.0,,
+Transferência para outra unidade,1.0,,
+Morte,1.0,,
+Cuidados paliativos,1.0,,
+Alta contra orientação médica,1.0,,
+"Vivo, não admitido",,,

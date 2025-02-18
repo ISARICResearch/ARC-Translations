@@ -1,9 +1,9 @@
-Disease,Code,Library,Selected
-Trabalhador da saúde,,,1.0
-Trabalhador de Fazenda de Laticínios,,,1.0
-Trabalhador de granja avícola,,,1.0
-Trabalhador de fazenda de gado de corte,,,1.0
-Veterinário,,,1.0
-Trabalhador de matadouro,,,1.0
-Trabalhador de transporte público,,,
-Trabalhador de saneamento,,,
+Disease,Code,Library,Selected,Language Speaker Reviewed,Clinical Language Speaker Reviewed
+Trabalhador da saúde,,,1.0,,
+Trabalhador de Fazenda de Laticínios,,,1.0,,
+Trabalhador de granja avícola,,,1.0,,
+Trabalhador de fazenda de gado de corte,,,1.0,,
+Veterinário,,,1.0,,
+Trabalhador de matadouro,,,1.0,,
+Trabalhador de transporte público,,,,,
+Trabalhador de saneamento,,,,,

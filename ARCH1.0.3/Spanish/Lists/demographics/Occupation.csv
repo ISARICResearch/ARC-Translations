@@ -1,9 +1,9 @@
-Disease,Code,Library,Selected
-Trabajador de la salud,,,1.0
-Trabajador de granja lechera,,,1.0
-Trabajador de granja avícola,,,1.0
-Trabajador de granja de ganado vacuno,,,1.0
-Veterinario,,,1.0
-Trabajador de matadero,,,1.0
-Trabajador de transporte público,,,
-Trabajador de Saneamiento,,,
+Disease,Code,Library,Selected,Language Speaker Reviewed,Clinical Language Speaker Reviewed
+Trabajador de la salud,,,1.0,,
+Trabajador de granja lechera,,,1.0,,
+Trabajador de granja avícola,,,1.0,,
+Trabajador de granja de ganado vacuno,,,1.0,,
+Veterinario,,,1.0,,
+Trabajador de matadero,,,1.0,,
+Trabajador de transporte público,,,,,
+Trabajador de Saneamiento,,,,,
