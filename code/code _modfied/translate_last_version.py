@@ -2,27 +2,17 @@ import sys
 import os
 import json
 
-# Import the module where the needed scripts are.
-#Directory where the BRIDGE repository is
-bridge_path="D:/Redaedes/CONTAGIO/WP2/task2.2/code/DataPlatform/BRIDGE"
-##!!!!Uncomment to set the path to the BRDIGE repository directory
-BRIDGE =os.path.dirname(os.path.realpath(bridge_path))
-sys.path.append(BRIDGE)
 
-from BRIDGE import arch
 import archtranslation
 import ListTranslation
-#get the versions from arch repository
-all_versions, most_recent_version_str = arch.getARCHVersions()
-#print(all_versions)
-print("***")
-#Code to generate on github repository. uncomment when on github repository
-#root_arch='https://raw.githubusercontent.com/ISARICResearch/DataPlatform/main/ARCH/'
-#root_arch_t='https://raw.githubusercontent.com/ISARICResearch/ARC-Translations/main/ARCH/'
+
 
 #code to run locally. uncomment when run locally 
-root_arch='ARCH/'
-root_arch_t='D:/Redaedes/CONTAGIO/WP2/task2.2/code/ARC-Translations'
+root_arch='C:/Users/sduquevallejo/Documents/GitHub/DataPlatform/ARCH/'
+
+root_arch_t='C:/Users/sduquevallejo/Documents/GitHub/ARC-Translations'
+
+most_recent_version_str='ARCH1.1.0-rc'
 
 ###Translations parameters:
 #Language definitions to translate [('Language', 'Lang code')]
@@ -45,14 +35,15 @@ lists=[
 	('drugs', ['Drugs (Generic)', 'Drugs', 'IV fluids']), 
 	('inclusion', ['Disease']), 
 	('outcome', ['Outcome']), 
-	('pathogens', ['Microorganism'])
+	('pathogens', ['Microorganism']),
+    ('followup', ['Outcome','Sequelae'])
 ]
 
 #Translation execution
 for lang in langs:
 	print("start lang: "+lang[0])
-	for li in lists:
-		ListTranslation.translate_lists(f'{lists_file_path_src}/', li[0], li[1], arch_dir_path_des, lang)
-	archtranslation.translate_arch(paper_file_path_src, paper_col_translate, arch_dir_path_des, lang)
+	#for li in lists:
+	#	ListTranslation.translate_lists(f'{lists_file_path_src}/', li[0], li[1], arch_dir_path_des, lang)
+	#archtranslation.translate_arch(paper_file_path_src, paper_col_translate, arch_dir_path_des, lang)
 	archtranslation.translate_arch(arch_file_path_src, arch_col_translate, arch_dir_path_des, lang)
 	print("--------")
