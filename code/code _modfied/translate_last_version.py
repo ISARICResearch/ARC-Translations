@@ -42,8 +42,10 @@ lists=[
 #Translation execution
 for lang in langs:
     print("start lang: "+lang[0])
+    '''
     for li in lists:
         ListTranslation.translate_lists(f'{lists_file_path_src}/', li[0], li[1], arch_dir_path_des, lang)
 	#archtranslation.translate_arch(paper_file_path_src, paper_col_translate, arch_dir_path_des, lang)
+    '''
     archtranslation.translate_arch(arch_file_path_src, arch_col_translate, arch_dir_path_des, lang)
     print("--------")
