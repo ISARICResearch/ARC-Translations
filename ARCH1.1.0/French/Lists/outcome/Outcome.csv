@@ -1,8 +1,8 @@
-Outcome,Selected,Language Speaker Reviewed,Clinical Language Speaker Reviewed
-Déchargé vivant,1.0,,
-Toujours hospitalisé,1.0,,
-Transfert vers d'autres installations,1.0,,
-La mort,1.0,,
-Soins palliatifs,1.0,,
-Libéré contre les conseils médicaux,1.0,,
-"Vivant, non admis",,,
+Outcome,Selected,Value,Language Speaker Reviewed,Clinical Language Speaker Reviewed
+"Vivant, non admis",,1,,
+La mort,1.0,2,,
+Libéré contre les conseils médicaux,1.0,3,,
+Déchargé vivant,1.0,4,,
+Soins palliatifs,1.0,5,,
+Toujours hospitalisé,1.0,6,,
+Transfert vers d'autres installations,1.0,7,,

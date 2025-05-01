@@ -16,7 +16,7 @@ most_recent_version_str='ARCH1.1.0'
 
 ###Translations parameters:
 #Language definitions to translate [('Language', 'Lang code')]
-langs=[('French', 'fr'),('Spanish', 'es'),('Portuguese', 'pt')]
+langs=[('Spanish', 'es'),('Portuguese', 'pt'),('French', 'fr')]
 
 #Translation parameters to set before
 #for arch file
@@ -42,10 +42,8 @@ lists=[
 #Translation execution
 for lang in langs:
     print("start lang: "+lang[0])
-    '''
+    archtranslation.translate_arch(arch_file_path_src, arch_col_translate, arch_dir_path_des, lang)
     for li in lists:
         ListTranslation.translate_lists(f'{lists_file_path_src}/', li[0], li[1], arch_dir_path_des, lang)
 	#archtranslation.translate_arch(paper_file_path_src, paper_col_translate, arch_dir_path_des, lang)
-    '''
-    archtranslation.translate_arch(arch_file_path_src, arch_col_translate, arch_dir_path_des, lang)
     print("--------")

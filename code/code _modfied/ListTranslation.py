@@ -30,7 +30,7 @@ def translate_lists(dir_path, list_item, columns_df, output_dir_path, lang):
         for filename in files:
             # Read the CSV file
             file_path = os.path.join(dir_path_item, filename)
-            df = pd.read_csv(file_path, sep=',')
+            df = pd.read_csv(file_path, sep=',',encoding='utf-8')
             df_final = df.copy()
 
             # Translate specified columns
@@ -56,7 +56,7 @@ def translate_lists(dir_path, list_item, columns_df, output_dir_path, lang):
 
             # Save translated DataFrame
             output_file_path = os.path.join(output_dir_path_l3, filename)
-            df_final.to_csv(output_file_path, index=False)
+            df_final.to_csv(output_file_path,encoding='utf-8' ,index=False)
             print(f"✅ List translation complete. Output saved to {output_file_path}")
 
 '''
