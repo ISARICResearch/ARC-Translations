@@ -1,0 +1,10 @@
+variable,text,Language Speaker Reviewed,Clinical Language Speaker Reviewed
+select,Seleccionar,,
+specify,Especifique,,
+specify_other,Especifique otro(a),,
+specify_other_infection,Especifique otra infección que se sospecha/ha confirmado en el individuo,,
+other_agent,tros medicamentos administrados durante la hospitalización o al alta,,
+select_additional,Seleccionar adicional,,
+any_additional,Cualquier adicional,,
+other,Otro(a),,
+units,Unidades,,
