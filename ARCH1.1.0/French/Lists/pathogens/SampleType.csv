@@ -1,4 +1,4 @@
-Sample_Type,Code,Library,Selected,preset_ARChetype CRF_Covid,preset_ARChetype CRF_Dengue,preset_ARChetype CRF_Mpox,preset_ARChetype CRF_H5Nx,preset_ARChetype CRF_Mpox-Pregnancy&Paediatrics,preset_ARChetype CRF_ARI,Value,Language Speaker Reviewed,Clinical Language Speaker Reviewed
+Sample_Type,Code,Library,Selected,preset_ARChetype CRF_Covid,preset_ARChetype CRF_Dengue,preset_ARChetype CRF_Mpox,preset_ARChetype CRF_H5Nx,preset_ARChetype CRF_Mpox-Pregnancy&Paediatrics,preset_ARChetype Syndromic CRF_ARI,Value,Language Speaker Reviewed,Clinical Language Speaker Reviewed
 Liquide amniotique,TEMP,TEMP,,,,,,,,1,,
 BAL (lavage bronchoalvéolaire),TEMP,TEMP,1.0,1.0,,,1.0,,1.0,2,,
 Sang,TEMP,TEMP,1.0,1.0,1.0,1.0,1.0,1.0,1.0,3,,
