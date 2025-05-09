@@ -1,4 +1,4 @@
-Disease,Code,Library,Selected,preset_ARChetype CRF_Covid,preset_ARChetype CRF_Dengue,preset_ARChetype CRF_Mpox,preset_ARChetype CRF_H5Nx,preset_UserGenerated_Oropouche,preset_Syndrome_VHF,preset_ARChetype CRF_Mpox-Pregnancy&Paediatrics,preset_ARChetype Syndromic CRF_ARI,Value,Language Speaker Reviewed,Clinical Language Speaker Reviewed
+Disease,Code,Library,Selected,preset_ARChetype Disease CRF_Covid,preset_ARChetype Disease CRF_Dengue,preset_ARChetype Disease CRF_Mpox,preset_ARChetype Disease CRF_H5Nx,preset_UserGenerated_Oropouche,preset_Syndrome_VHF,preset_ARChetype Disease CRF_Mpox-Pregnancy&Paediatrics,preset_ARChetype Syndromic CRF_ARI,Value,Language Speaker Reviewed,Clinical Language Speaker Reviewed
 Adénovirus,,,,,,,1.0,,,,1.0,1,,
 Infection du virus des Andes (hantavirus),359761005,SNOMED,,,,,,,1.0,,,2,,
 Fièvre hémorragique argentine (virus Junin),58868000,SNOMED,,,,,,,1.0,,,3,,

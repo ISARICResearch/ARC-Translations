@@ -1,4 +1,4 @@
-Condition,Code,Library,Code_2,Library_2,Selected,preset_ARChetype CRF_H5Nx,preset_ARChetype Syndromic CRF_ARI,Value,Language Speaker Reviewed,Clinical Language Speaker Reviewed
+Condition,Code,Library,Code_2,Library_2,Selected,preset_ARChetype Disease CRF_H5Nx,preset_ARChetype Syndromic CRF_ARI,Value,Language Speaker Reviewed,Clinical Language Speaker Reviewed
 Dolor abdominal,R10.9,ICD10,21522001,SNOMED,,,,1,,
 Pérdida de peso anormal,R63.4,ICD10,267024001,SNOMED,,,,2,,
 Alopecia (pérdida de cabello no acelerante),L65.9,ICD10,56317004,SNOMED,,,,3,,
