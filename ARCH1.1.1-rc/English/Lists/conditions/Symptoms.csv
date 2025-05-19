@@ -1,4 +1,4 @@
-Condition,Code,Library,Code_2,Library_2,Selected,preset_ARChetype CRF_H5Nx,preset_ARChetype CRF_ARI,Value
+Condition,Code,Library,Code_2,Library_2,Selected,preset_ARChetype Disease CRF_H5Nx,preset_ARChetype Syndromic CRF_ARI,Value
 Abdominal pain,R10.9,ICD10,21522001,SNOMED,,,,1
 Abnormal weight loss,R63.4,ICD10,267024001,SNOMED,,,,2
 Alopecia (Nonscarring hair loss),L65.9,ICD10,56317004,SNOMED,,,,3
@@ -33,7 +33,7 @@ Erectile dysfunction,N52.9,ICD10,860914002,SNOMED,,,,31
 Fainting / blackouts (Syncope and collapse),R55,ICD10,309585006,SNOMED,,,,32
 Fecal incontinence,R15,ICD10,72042002,SNOMED,,,,33
 Feeding difficulty,R63.3,ICD10,78164000,SNOMED,,,,34
-Fever,R50.9,ICD10,386661006,SNOMED,1.0,1.0,,35
+Fever,R50.9,ICD10,386661006,SNOMED,1.0,1.0,1.0,35
 Gastrointestinal bleeding (Gastrointestinal hemorrhage),K92.2,ICD10,74474003,SNOMED,,,,36
 Headache,R51,ICD10,25064002,SNOMED,,,,37
 Hepatomegaly,R16.0,ICD10,80515008,SNOMED,,,,38
