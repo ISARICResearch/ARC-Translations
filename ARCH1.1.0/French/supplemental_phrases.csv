@@ -1,4 +1,4 @@
-variable,text,Language Speaker Reviewed,Clinical Language Speaker Reviewed
+﻿variable,text,Language Speaker Reviewed,Clinical Language Speaker Reviewed
 select,Sélectionnez,,
 specify,Précisez,,
 specify_other,Précisez un(e) autre,,
@@ -9,4 +9,4 @@ any_additional,Tout supplémentaire,,
 other,Autre,,
 units,Unités,,
 if,Si,,
-if_completeForm,"Si Oui, compl�tez le formulaire",,
+if_completeForm,"Si Oui, complétez le formulaire",,
