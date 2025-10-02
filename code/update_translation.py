@@ -8,8 +8,12 @@ root_trans = r'C:/Users/sduquevallejo/Documents/GitHub/ARC-Translations/ARCH1.1.
 save_root = r'C:\Users\sduquevallejo\Documents\GitHub\ARC-Translations\ARCH1.1.2'
 
 # Idiomas
+'''
+
 lang = ['Spanish', 'French', 'Portuguese']
 
+
+df_transl=pd.read_excel()
 # Columnas de contenido
 CONTENT_COLS = ['Form', 'Section', 'Question', 'Answer Options', 'Definition', 'Completion Guideline']
 
@@ -70,3 +74,28 @@ for i in lang:
     out.to_csv(save_path, index=False, encoding='utf-8-sig')
 
     print(f"Archivo mergeado y guardado en: {save_path}")
+'''
+
+lang = ['French', 'Portuguese']
+
+for i in lang:
+    df_transl = pd.read_excel(save_root+'/translations_missing_fr_pt.xlsx', sheet_name=i)
+    df_base = pd.read_csv(save_root + '/' + i + '/ARCH.csv',encoding='utf-8')
+    df_base = df_base.iloc[:, :-1]
+
+    df_merged = df_base.merge(
+        df_transl,
+        on="Variable",
+        how="left",
+        suffixes=("", "_transl")
+    )
+    
+   
+    for col in df_transl.columns:
+        if col != "Variable":
+            df_merged[col] = df_merged[col + "_transl"].combine_first(df_merged[col])
+            df_merged.drop(columns=[col + "_transl"], inplace=True)
+    
+    df_base = df_merged
+
+    df_base.to_csv(save_root + '/' + i + '/ARCH.csv', index=False, encoding='utf-8')
