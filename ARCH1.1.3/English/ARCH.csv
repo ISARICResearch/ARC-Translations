@@ -39,7 +39,7 @@ presentation,RE-ADMISSION AND PREVIOUS PIN,readm_prevpin,Previous Participant Id
 presentation,RE-ADMISSION AND PREVIOUS PIN,readm_reas,Is the patient being re-admitted with or due to infection with pathogen of interest?,"1, Yes | 0, No | 99, Unknown",This refers to re-admission of the patient with or due to infection with pathogen of interest.,Indicate 'Yes' if the patient is being re-admitted with or due to infection with pathogen of interest.
 presentation,DEMOGRAPHICS,demog_sex,Sex at birth,"1, Male | 2, Female | 99, Not specified/Unknown | 88, Other",This refers to the physical sexual characteristics at birth.,Select the most appropriate option that represents the physical sexual characteristics at birth.
 presentation,DEMOGRAPHICS,demog_sex_oth,Specify other sex at birth,,This refers to the physical sexual characteristics at birth.,"If 'Other', specify the physical sexual characteristics at birth."
-presentation,DEMOGRAPHICS,demog_gender,Gender,"1, Man | 2, Woman | 3, Non-binary | 99, Unknown | 88, Other","This refers to a person's internally held sense of their gender, which may or may not correspond to the individual's genotypic or phenotypic sex. ",Select the most appropriate option that represents the patient's gender identity.
+presentation,DEMOGRAPHICS,demog_gender,Gender,"1, Male | 2, Female | 3, Non-binary | 99, Unknown | 88, Other","This refers to a person's internally held sense of their gender, which may or may not correspond to the individual's genotypic or phenotypic sex. ",Select the most appropriate option that represents the patient's gender identity.
 presentation,DEMOGRAPHICS,demog_gender_oth,Specify other gender,,"This refers to a person's internally held sense of their gender, which may or may not correspond to the individual's genotypic or phenotypic sex. ",If 'Other' specify patient's gender identity.
 presentation,DEMOGRAPHICS,demog_birthknow,Is the date of birth known?,"1, Yes | 0, No",This refers to the calendar date on which the patient was born.,Record the participants date of birth in DD/MM/YYYY format.
 presentation,DEMOGRAPHICS,demog_birthdate,Date of birth,,This refers to the calendar date on which the patient was born.,Enter the participant's date of birth. (Use the format DD/MM/YYYY)
@@ -47,15 +47,7 @@ presentation,DEMOGRAPHICS,demog_age,Age,,This refers to the patient's age.,"For 
 presentation,DEMOGRAPHICS,demog_age_units,Age units,"1, Years | 2, Months | 3, Days",This refers to the patient's age at presentation to the health facility.,Select the most appropriate units for age.
 presentation,DEMOGRAPHICS,demog_country,Country,,This refers to the country of enrolment,Indicate the country of enrolment
 presentation,DEMOGRAPHICS,demog_outcountry,Was the patient born outside the reporting country?,"1, Yes | 0, No | 99, Unknown",This refers to birth of the particpant outside the reporting country,Indicate whether the particpant was born outside the reporting country
-presentation,DEMOGRAPHICS,demog_calcage,Calculated Age,"if([demog_birthknow] = '1',
-  datediff([demog_birthdate], [dates_admdate], ""y""),
-  if([demog_age_units] = '1', [demog_age],
-     if([demog_age_units] = '2', round([demog_age]/12, 2),
-        if([demog_age_units] = '3', round([demog_age]/365.25, 2),
-           '')
-      )
-   )
-)",This refers to the patient's age.,"Age is calculated, if the date of birth is known, as the difference between the date of birth and the most recent date of presentation or admission to the facility."
+presentation,DEMOGRAPHICS,demog_calcage,Calculated Age,"if([demog_birthknow] = '1',  datediff([demog_birthdate], [dates_admdate], ""y""),  if([demog_age_units] = '1', [demog_age], if([demog_age_units] = '2', round([demog_age]/12, 2), if([demog_age_units] = '3', round([demog_age]/365.25, 2), '') ) ))",This refers to the patient's age.,"Age is calculated, if the date of birth is known, as the difference between the date of birth and the most recent date of presentation or admission to the facility."
 presentation,DEMOGRAPHICS,demog_height,Height (select units),,Actual or closest estimate to height at time of admission.,
 presentation,DEMOGRAPHICS,demog_height_cm,Height (cm),,"This refers to the distance from the sole to the crown of the head with body standing on a flat surface and fully extended, measured in centimetres. For children under the age of 2, please use body length (measured while lying supine).","Indicate the patient's height in centimetres (cm). For children under the age of 2, please use length."
 presentation,DEMOGRAPHICS,demog_height_in,Height (in),,"This refers to the distance from the sole to the crown of the head with body standing on a flat surface and fully extended, measured in inches. For children under the age of 2, please use body length (measured while lying supine).","Indicate the patient's height in inches (in). For children under the age of 2, please use length."
