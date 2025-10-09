@@ -4,16 +4,15 @@ import numpy as np
 
 # Rutas
 root_old = 'https://raw.githubusercontent.com/ISARICResearch/ARC/main'
-root_trans = r'C:/Users/sduquevallejo/Documents/GitHub/ARC-Translations/ARCH1.1.0'
-save_root = r'C:\Users\sduquevallejo\Documents\GitHub\ARC-Translations\ARCH1.1.2'
+root_trans = r'C:/Users/sduquevallejo/Documents/GitHub/ARC-Translations/ARCH1.1.2'
+save_root = r'C:\Users\sduquevallejo\Documents\GitHub\ARC-Translations\ARCH1.1.3'
 
 # Idiomas
-'''
 
+'''
 lang = ['Spanish', 'French', 'Portuguese']
 
 
-df_transl=pd.read_excel()
 # Columnas de contenido
 CONTENT_COLS = ['Form', 'Section', 'Question', 'Answer Options', 'Definition', 'Completion Guideline']
 
@@ -65,21 +64,24 @@ for i in lang:
         out[col] = np.where(no_trans, dfm[col_base], dfm[col_trans])
 
     # needs_manual = 1 solo cuando la Variable no existía en df_trans
-    out[f'{i}_needs_manual'] = no_trans.astype(int)
+    out['needs_manual'] = no_trans.astype(int)
+
 
     # Guardar
     folder_path = os.path.join(save_root, i)
     os.makedirs(folder_path, exist_ok=True)
     save_path = os.path.join(folder_path, 'ARCH.csv')
-    out.to_csv(save_path, index=False, encoding='utf-8-sig')
+    out.to_csv(save_path, index=False, encoding='utf-8')
 
     print(f"Archivo mergeado y guardado en: {save_path}")
-'''
 
-lang = ['French', 'Portuguese']
+out[out['needs_manual']==1].to_csv(save_root+'\needs_manal.csv', index=False, encoding='utf-8')
+
+'''
+lang = ['Spanish','French', 'Portuguese']
 
 for i in lang:
-    df_transl = pd.read_excel(save_root+'/translations_missing_fr_pt.xlsx', sheet_name=i)
+    df_transl = pd.read_excel(save_root+'/ARCH1.1.3needs_manal.xlsx', sheet_name=i)
     df_base = pd.read_csv(save_root + '/' + i + '/ARCH.csv',encoding='utf-8')
     df_base = df_base.iloc[:, :-1]
 
@@ -99,3 +101,4 @@ for i in lang:
     df_base = df_merged
 
     df_base.to_csv(save_root + '/' + i + '/ARCH.csv', index=False, encoding='utf-8')
+    
