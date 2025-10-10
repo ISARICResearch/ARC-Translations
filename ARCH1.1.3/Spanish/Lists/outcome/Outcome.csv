@@ -1,8 +1,8 @@
 Outcome,Selected,Value,Language Speaker Reviewed,Clinical Language Speaker Reviewed
 "Vivo, no admitido",,1,,
 Muerte,1.0,2,,
-Dado de alta contra asesoramiento médico,1.0,3,,
-Dado de alta viva,1.0,4,,
-Cuidados paliativos,1.0,5,,
+Dado de alta en contra del consejo médico,1.0,3,,
+dado de alta vivo,1.0,4,,
+cuidados paliativos,1.0,5,,
 Todavía hospitalizado,1.0,6,,
-Transferir a otras instalaciones,1.0,7,,
+Traslado a otra instalación,1.0,7,,

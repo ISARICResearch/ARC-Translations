@@ -12,7 +12,7 @@ root_arch='C:/Users/sduquevallejo/Documents/GitHub/DataPlatform/ARCH/'
 
 root_arch_t='C:/Users/sduquevallejo/Documents/GitHub/ARC-Translations'
 
-most_recent_version_str='ARCH1.1.0'
+most_recent_version_str='ARCH1.1.3'
 
 ###Translations parameters:
 #Language definitions to translate [('Language', 'Lang code')]
@@ -30,7 +30,7 @@ paper_col_translate=['Paper-like section','Text']
 lists_file_path_src=root_arch+most_recent_version_str+'/Lists/'
 #Lists in the format[('list',['columns'])]. Columns list should be all the possible name of columns to be translated of each list file
 lists=[
-	('conditions',['Condition']), 
+	('conditions',['Condition','Site']), 
 	('demographics',['Region', 'Country', 'Disease','Race']), 
 	('drugs', ['Drugs (Generic)', 'Drugs', 'IV fluids']), 
 	('inclusion', ['Disease']), 
@@ -42,7 +42,7 @@ lists=[
 #Translation execution
 for lang in langs:
     print("start lang: "+lang[0])
-    archtranslation.translate_arch(arch_file_path_src, arch_col_translate, arch_dir_path_des, lang)
+    #archtranslation.translate_arch(arch_file_path_src, arch_col_translate, arch_dir_path_des, lang)
     for li in lists:
         ListTranslation.translate_lists(f'{lists_file_path_src}/', li[0], li[1], arch_dir_path_des, lang)
 	#archtranslation.translate_arch(paper_file_path_src, paper_col_translate, arch_dir_path_des, lang)
