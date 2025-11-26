@@ -4,8 +4,8 @@ import numpy as np
 
 # Rutas
 root_old = 'https://raw.githubusercontent.com/ISARICResearch/ARC/main'
-root_trans = r'C:/Users/sduquevallejo/Documents/GitHub/ARC-Translations/ARCH1.1.2'
-save_root = r'C:\Users\sduquevallejo\Documents\GitHub\ARC-Translations\ARCH1.1.3'
+root_trans = r'C:/Users/sduquevallejo/Documents/GitHub/ARC-Translations/ARCH1.1.4'
+save_root = r'C:\Users\sduquevallejo\Documents\GitHub\ARC-Translations\ARCH1.1.5'
 
 # Idiomas
 
