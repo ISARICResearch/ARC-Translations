@@ -1,0 +1,10 @@
+Drugs,Code,Library,Selected,Value,Language Speaker Reviewed,Clinical Language Speaker Reviewed
+Anfotericina B,714520003,http://snomed.info/sct,1.0,1,,
+clotrimazol,5797005,http://snomed.info/sct,,2,,
+econazol,18952006,http://snomed.info/sct,,3,,
+fluconazol,31865003,http://snomed.info/sct,1.0,4,,
+ketoconazol,40232005,http://snomed.info/sct,,5,,
+Anfotericina liposomal,773379008,http://snomed.info/sct,1.0,6,,
+miconazol,42720001,http://snomed.info/sct,,7,,
+Nistatina,12096000,http://snomed.info/sct,,8,,
+terbinafina,108925005,http://snomed.info/sct,,9,,
