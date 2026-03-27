@@ -354,18 +354,14 @@ presentation,SYMPTOMS ON ADMISSION: Indicate if experienced at any time from ons
 presentation,SYMPTOMS ON ADMISSION: Indicate if experienced at any time from onset of this illness to the day of presentation.,adsym_myalgia_scal,Myalgia intensity (NRS scale),,,
 presentation,SYMPTOMS ON ADMISSION: Indicate if experienced at any time from onset of this illness to the day of presentation.,adsym_arthralgia,Joint pain (arthralgia),"1, Yes | 0, No | 99, Unknown","This refers to a sensation of marked discomfort or pain localised to one or more joints, including small and big joints.","Indicate 'Yes', if the patient has experienced this at any time from onset of this illness to presentation."
 presentation,SYMPTOMS ON ADMISSION: Indicate if experienced at any time from onset of this illness to the day of presentation.,adsym_arthralgia_scal,Artralgia intensity (NRS scale),,,
-presentation,SYMPTOMS ON ADMISSION: Indicate if experienced at any time from onset of this illness to the day of presentation.,adsym_arthralgia_site,Site where joint pain occurred,"1, Shoulder  | 2, Elbow | 3, Wrist | 4, Small joints of hand | 5, Knee | 6, Ankle |7, Small joints of foot | 88, Other 
-
-",,
+presentation,SYMPTOMS ON ADMISSION: Indicate if experienced at any time from onset of this illness to the day of presentation.,adsym_arthralgia_site,Site where joint pain occurred,"1, Shoulder  | 2, Elbow | 3, Wrist | 4, Small joints of hand | 5, Knee | 6, Ankle |7, Small joints of foot | 88, Other",,
 presentation,SYMPTOMS ON ADMISSION: Indicate if experienced at any time from onset of this illness to the day of presentation.,adsym_arthralgia_num,How many joints affected?  ,,,
 presentation,SYMPTOMS ON ADMISSION: Indicate if experienced at any time from onset of this illness to the day of presentation.,adsym_arthralgia_hand,Small joints of hand,"1, MCP (metacarpophalangeal) joint | 2, PIP (proximal interphalangeal) joint | 3, DIP (distal interphalangeal) joint | 99, Unknown",,
 presentation,SYMPTOMS ON ADMISSION: Indicate if experienced at any time from onset of this illness to the day of presentation.,adsym_arthralgia_hand_num,How many joints affected?  ,,,
 presentation,SYMPTOMS ON ADMISSION: Indicate if experienced at any time from onset of this illness to the day of presentation.,adsym_arthralgia_add,Indicate other affected joints,"1, TMJ  | 2, Sternoclavicular (SC)  |  3, Acromioclavicular (AC) |  4, Sacroiliac (SI)  | 5, Hip | 6, Subtalar  | 7, Thoracic spine | 8, Lumbar spine | 88, Other (specify)",,
 presentation,SYMPTOMS ON ADMISSION: Indicate if experienced at any time from onset of this illness to the day of presentation.,adsym_arthralgia_add_oth,Specify other joint(s),,,
 presentation,SYMPTOMS ON ADMISSION: Indicate if experienced at any time from onset of this illness to the day of presentation.,adsym_jointswell,Joint swelling,"1, Yes | 0, No | 99, Unknown",Defined as the buildup of fluid in the soft tissue SURROUNDING the joint or in the joint itself,"Indicate 'Yes', if the patient has experienced this at any time from onset of this illness to presentation. "
-presentation,SYMPTOMS ON ADMISSION: Indicate if experienced at any time from onset of this illness to the day of presentation.,adsym_jointswell_site,Site where joint swelling occurred,"1, Shoulder  | 2, Elbow | 3, Wrist | 4, Small joints of hand | 5, Knee | 6, Ankle |7, Small joints of foot | 88, Other 
-
-",This refers to the location where joint swelling first occurred,
+presentation,SYMPTOMS ON ADMISSION: Indicate if experienced at any time from onset of this illness to the day of presentation.,adsym_jointswell_site,Site where joint swelling occurred,"1, Shoulder  | 2, Elbow | 3, Wrist | 4, Small joints of hand | 5, Knee | 6, Ankle |7, Small joints of foot | 88, Other",,
 presentation,SYMPTOMS ON ADMISSION: Indicate if experienced at any time from onset of this illness to the day of presentation.,adsym_jointswell_num,How many joints affected?  ,,,
 presentation,SYMPTOMS ON ADMISSION: Indicate if experienced at any time from onset of this illness to the day of presentation.,adsym_jointswell_hand,Small joints of hand,"1, MCP (metacarpophalangeal) joint | 2, PIP (proximal interphalangeal) joint | 3, DIP (distal interphalangeal) joint | 99, Unknown",,
 presentation,SYMPTOMS ON ADMISSION: Indicate if experienced at any time from onset of this illness to the day of presentation.,adsym_jointswell_hand_num,How many joints affected?  ,,,
@@ -597,18 +593,14 @@ daily,SYMPTOMS: Indicate if experienced between 00:00 to 24:00 on day of assessm
 daily,SYMPTOMS: Indicate if experienced between 00:00 to 24:00 on day of assessment.,sympt_dizzy,Feeling dizzy / faint,"1, Yes | 0, No | 99, Unknown","This refers to the subjective feeling of light-headedness or dizziness which may precede an episode of syncope or a sensation of unsteadiness, spinning or rocking.","Indicate 'Yes', if the patient experienced this at any time during the date of assessment."
 daily,SYMPTOMS: Indicate if experienced between 00:00 to 24:00 on day of assessment.,sympt_myalgia,Muscle aches (myalgia),"1, Yes | 0, No | 99, Unknown",This refers to pain localised to a muscle or group of muscles.,"Indicate 'Yes', if the patient experienced this at any time during the date of assessment."
 daily,SYMPTOMS: Indicate if experienced between 00:00 to 24:00 on day of assessment.,sympt_jointswell,Joint swelling,"1, Yes | 0, No | 99, Unknown",Defined as the buildup of fluid in the soft tissue SURROUNDING the joint or in the joint itself,"Indicate 'Yes', if the patient has experienced this at any time from onset of this illness to presentation. "
-daily,SYMPTOMS: Indicate if experienced between 00:00 to 24:00 on day of assessment.,sympt_jointswell_site,Site where joint swelling occurred,"1, Shoulder  | 2, Elbow | 3, Wrist | 4, Small joints of hand | 5, Knee | 6, Ankle |7, Small joints of foot | 88, Other 
-
-",This refers to the location where joint swelling first occurred,
+daily,SYMPTOMS: Indicate if experienced between 00:00 to 24:00 on day of assessment.,sympt_jointswell_site,Site where joint swelling occurred,"1, Shoulder  | 2, Elbow | 3, Wrist | 4, Small joints of hand | 5, Knee | 6, Ankle |7, Small joints of foot | 88, Other",,
 daily,SYMPTOMS: Indicate if experienced between 00:00 to 24:00 on day of assessment.,sympt_jointswell_num,How many joints affected?  ,,,
 daily,SYMPTOMS: Indicate if experienced between 00:00 to 24:00 on day of assessment.,sympt_jointswell_hand,Small joints of hand,"1, MCP (metacarpophalangeal) joint | 2, PIP (proximal interphalangeal) joint | 3, DIP (distal interphalangeal) joint | 99, Unknown",,
 daily,SYMPTOMS: Indicate if experienced between 00:00 to 24:00 on day of assessment.,sympt_jointswell_hand_num,How many joints affected?  ,,,
 daily,SYMPTOMS: Indicate if experienced between 00:00 to 24:00 on day of assessment.,sympt_jointswell_add,Indicate other affected joints,"1, TMJ  | 2, Sternoclavicular (SC)  |  3, Acromioclavicular (AC) |  4, Sacroiliac (SI)  | 5, Hip | 6, Subtalar  | 7, Thoracic spine | 8, Lumbar spine | 88, Other (specify)",,
 daily,SYMPTOMS: Indicate if experienced between 00:00 to 24:00 on day of assessment.,sympt_jointswell_add_oth,Specify other joint(s),,,
 daily,SYMPTOMS: Indicate if experienced between 00:00 to 24:00 on day of assessment.,sympt_jointtender,Joint tenderness,"1, Yes | 0, No | 99, Unknown","Defined as pain and discomfort in a joint, often accompanied by sensitivity to touch","Indicate 'Yes', if the patient has experienced this at any time from onset of this illness to presentation. "
-daily,SYMPTOMS: Indicate if experienced between 00:00 to 24:00 on day of assessment.,sympt_jointtender_site,Indicate affected joints,"1, Shoulder  | 2, Elbow | 3, Wrist | 4, Small joints of hand | 5, Knee | 6, Ankle |7, Small joints of foot | 88, Other 
-
-",,
+daily,SYMPTOMS: Indicate if experienced between 00:00 to 24:00 on day of assessment.,sympt_jointtender_site,Indicate affected joints,"1, Shoulder  | 2, Elbow | 3, Wrist | 4, Small joints of hand | 5, Knee | 6, Ankle |7, Small joints of foot | 88, Other",,
 daily,SYMPTOMS: Indicate if experienced between 00:00 to 24:00 on day of assessment.,sympt_jointtender_num,How many joints affected?  ,,,
 daily,SYMPTOMS: Indicate if experienced between 00:00 to 24:00 on day of assessment.,sympt_jointtender_hand,Small joints of hand,"1, MCP (metacarpophalangeal) joint | 2, PIP (proximal interphalangeal) joint | 3, DIP (distal interphalangeal) joint | 99, Unknown",,
 daily,SYMPTOMS: Indicate if experienced between 00:00 to 24:00 on day of assessment.,sympt_jointtender_hand_num,How many joints affected?  ,,,
@@ -617,6 +609,12 @@ daily,SYMPTOMS: Indicate if experienced between 00:00 to 24:00 on day of assessm
 daily,SYMPTOMS: Indicate if experienced between 00:00 to 24:00 on day of assessment.,sympt_stissueswell,Small tissue swelling,"1, Yes | 0, No | 99, Unknown","Defined as painful swelling of the interphalangeal tissue, leading to tension and pain when flexing the fingers","Indicate 'Yes', if the patient has experienced this at any time from onset of this illness to presentation. "
 daily,SYMPTOMS: Indicate if experienced between 00:00 to 24:00 on day of assessment.,sympt_arthralgia,Joint pain (arthralgia),"1, Yes | 0, No | 99, Unknown","This refers to a sensation of marked discomfort or pain localised to one or more joints, including small and big joints.","Indicate 'Yes', if the patient experienced this between 00:00 to 24:00 on day of assessment."
 daily,SYMPTOMS: Indicate if experienced between 00:00 to 24:00 on day of assessment.,sympt_arthralgia_scal,Artralgia intensity (NRS scale),,,
+daily,SYMPTOMS: Indicate if experienced between 00:00 to 24:00 on day of assessment.,sympt_arthralgia_site,Site where joint pain occurred,"1, Shoulder  | 2, Elbow | 3, Wrist | 4, Small joints of hand | 5, Knee | 6, Ankle |7, Small joints of foot | 88, Other ",,
+daily,SYMPTOMS: Indicate if experienced between 00:00 to 24:00 on day of assessment.,sympt_arthralgia_num,How many joints affected?  ,,,
+daily,SYMPTOMS: Indicate if experienced between 00:00 to 24:00 on day of assessment.,sympt_arthralgia_hand,Small joints of hand,"1, MCP (metacarpophalangeal) joint | 2, PIP (proximal interphalangeal) joint | 3, DIP (distal interphalangeal) joint | 99, Unknown",,
+daily,SYMPTOMS: Indicate if experienced between 00:00 to 24:00 on day of assessment.,sympt_arthralgia_hand_num,How many joints affected?  ,,,
+daily,SYMPTOMS: Indicate if experienced between 00:00 to 24:00 on day of assessment.,sympt_arthralgia_add,Indicate other affected joints,"1, TMJ  | 2, Sternoclavicular (SC)  |  3, Acromioclavicular (AC) |  4, Sacroiliac (SI)  | 5, Hip | 6, Subtalar  | 7, Thoracic spine | 8, Lumbar spine | 88, Other (specify)",,
+daily,SYMPTOMS: Indicate if experienced between 00:00 to 24:00 on day of assessment.,sympt_arthralgia_add_oth,Specify other joint(s),,,
 daily,SYMPTOMS: Indicate if experienced between 00:00 to 24:00 on day of assessment.,sympt_neurpain,Neuropathic pain,"1, Yes | 0, No | 99, Unknown",,
 daily,SYMPTOMS: Indicate if experienced between 00:00 to 24:00 on day of assessment.,sympt_neurpain_scal,DN4 neuropathic pain scale,,,
 daily,SYMPTOMS: Indicate if experienced between 00:00 to 24:00 on day of assessment.,sympt_dn4,DN4 — Douleur Neuropathique 4 Questions (Neuropathic Pain Screening),,,
@@ -1370,15 +1368,9 @@ outcome,JOINT ASSESSMENT,joint_tjt_pip,Small joints of hand (PIP joints),"0, 0 |
 outcome,JOINT ASSESSMENT,joint_tjt_knee,Knees,"0, 0 | 1, 1 | 2, 2 | 99, Unknown",,
 outcome,JOINT ASSESSMENT,joint_tjt_descankle,Tender Ankles (CHIK-DAS addition),,,
 outcome,JOINT ASSESSMENT,joint_tjt_ankle,Ankles (for CHIK-DAS TJC30),"0, 0 | 1, 1 | 2, 2 | 99, Unknown",,
-outcome,JOINT ASSESSMENT,joint_tjt_calc28,TJC28 — Tender Joint Count (DAS28),"if([joint_tjt_shoulder]=99,0,[joint_tjt_shoulder]) +
-if([joint_tjt_elbow]=99,0,[joint_tjt_elbow]) +
-if([joint_tjt_wrist]=99,0,[joint_tjt_wrist]) +
-if([joint_tjt_mcp]=99,0,[joint_tjt_mcp]) +
-if([joint_tjt_pip]=99,0,[joint_tjt_pip]) +
-if([joint_tjt_knee]=99,0,[joint_tjt_knee])",,
-outcome,JOINT ASSESSMENT,joint_tjt_calc30,TJC30 — Tender Joint Count (CHIK-DAS),"[joint_tjt_calc28] +if([joint_tjt_knee]=99,0,[joint_tjt_knee]) +
-if([joint_tjt_ankle]=99,0,[joint_tjt_ankle])",,
-outcome,JOINT ASSESSMENT,joint_sjtdsc,<b>Instructions:</b> Tick each joint that is <u>swollen on examination</u>.,,,
+outcome,JOINT ASSESSMENT,joint_tjt_calc28,TJC28 — Tender Joint Count (DAS28),"if([joint_tjt_shoulder]=99,0,[joint_tjt_shoulder]) + if([joint_tjt_elbow]=99,0,[joint_tjt_elbow]) + if([joint_tjt_wrist]=99,0,[joint_tjt_wrist]) + if([joint_tjt_mcp]=99,0,[joint_tjt_mcp]) + if([joint_tjt_pip]=99,0,[joint_tjt_pip]) + if([joint_tjt_knee]=99,0,[joint_tjt_knee])",,
+outcome,JOINT ASSESSMENT,joint_tjt_calc30,TJC30 — Tender Joint Count (CHIK-DAS),"[joint_tjt_calc28] +if([joint_tjt_ankle]=99,0,[joint_tjt_ankle]) ",,
+outcome,JOINT ASSESSMENT,joint_sjtdsc,Instructions: Tick each joint that is swollen on examination,,,
 outcome,JOINT ASSESSMENT,joint_sjt,Swollen Joint Count (DAS28 joints) completed,"1, Yes | 0, No",,
 outcome,JOINT ASSESSMENT,joint_sjt_shoulder,Shoulders (glenohumeral),"0, 0 | 1, 1 | 2, 2 | 99, Unknown",,
 outcome,JOINT ASSESSMENT,joint_sjt_elbow,Elbows,"0, 0 | 1, 1 | 2, 2 | 99, Unknown",,
@@ -1386,12 +1378,7 @@ outcome,JOINT ASSESSMENT,joint_sjt_wrist,Wrists (radiocarpal),"0, 0 | 1, 1 | 2, 
 outcome,JOINT ASSESSMENT,joint_sjt_mcp,Small joints of hand (MCP joints),"0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 | 99, Unknown",,
 outcome,JOINT ASSESSMENT,joint_sjt_pip,Small joints of hand (PIP joints),"0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 | 99, Unknown",,
 outcome,JOINT ASSESSMENT,joint_sjt_knee,Knees,"0, 0 | 1, 1 | 2, 2 | 99, Unknown",,
-outcome,JOINT ASSESSMENT,joint_sjt_calc28,SJC28 — Swollen Joint Count (DAS28),"if([joint_sjt_shoulder]=99,0,[joint_sjt_shoulder]) +
-if([joint_sjt_elbow]=99,0,[joint_sjt_elbow]) +
-if([joint_sjt_wrist]=99,0,[joint_sjt_wrist]) +
-if([joint_sjt_mcp]=99,0,[joint_sjt_mcp]) +
-if([joint_sjt_pip]=99,0,[joint_sjt_pip]) +
-if([joint_sjt_knee]=99,0,[joint_sjt_knee])",,
+outcome,JOINT ASSESSMENT,joint_sjt_calc28,SJC28 — Swollen Joint Count (DAS28),"if([joint_sjt_shoulder]=99,0,[joint_sjt_shoulder]) + if([joint_sjt_elbow]=99,0,[joint_sjt_elbow]) + if([joint_sjt_wrist]=99,0,[joint_sjt_wrist]) + if([joint_sjt_mcp]=99,0,[joint_sjt_mcp]) + if([joint_sjt_pip]=99,0,[joint_sjt_pip]) + if([joint_sjt_knee]=99,0,[joint_sjt_knee])",,
 outcome,JOINT ASSESSMENT,joint_crp,CRP — C-Reactive Protein (mg/L),,,
 outcome,JOINT ASSESSMENT,joint_vas,Global Health VAS — Patient-reported,Very well | | Very poor,,
 outcome,JOINT ASSESSMENT,joint_stiff,Stiffness NRS — Patient-reported (0–10),"0, 0 — No stiffness | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 — Worst stiffness",,
