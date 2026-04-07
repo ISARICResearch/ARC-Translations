@@ -649,7 +649,7 @@ daily,SYMPTOMS: Indicate if experienced between 00:00 to 24:00 on day of assessm
 daily,SYMPTOMS: Indicate if experienced between 00:00 to 24:00 on day of assessment.,sympt_dn4_q4,QUESTION 4 — Is the pain provoked or increased by one or more of the following? (clinician examination),,,
 daily,SYMPTOMS: Indicate if experienced between 00:00 to 24:00 on day of assessment.,sympt_dn4_q4_brush,10. Brushing,"1, Yes | 0, No",,
 daily,SYMPTOMS: Indicate if experienced between 00:00 to 24:00 on day of assessment.,sympt_dn4_score,DN4 Total Score (0–10),"if([sympt_dn4_pain]='1',if([sympt_dn4_q1_burning]='1',1,0)+if([sympt_dn4_q1_cold]='1',1,0)+if([sympt_dn4_q1_shock]='1',1,0)+if([sympt_dn4_q2_tingling]='1',1,0)+if([sympt_dn4_q2_pins]='1',1,0)+if([sympt_dn4_q2_numb]='1',1,0)+if([sympt_dn4_q2_itch]='1',1,0)+if([sympt_dn4_q3_touch]='1',1,0)+if([sympt_dn4_q3_pin]='1',1,0)+if([sympt_dn4_q4_brush]='1',1,0),'')",,
-daily,SYMPTOMS: Indicate if experienced between 00:00 to 24:00 on day of assessment.,sympt_dn4_result,DN4 Result,"if([sympt_dn4_pain]='1',if([sympt_dn4_score]>=4,'Neuropathic pain','No neuropathic pain'),'')",,
+daily,SYMPTOMS: Indicate if experienced between 00:00 to 24:00 on day of assessment.,sympt_dn4_result,DN4 Result,,,
 daily,SYMPTOMS: Indicate if experienced between 00:00 to 24:00 on day of assessment.,sympt_dn4_notes,Clinical notes (optional),,,
 daily,SYMPTOMS: Indicate if experienced between 00:00 to 24:00 on day of assessment.,sympt_myalgia_scal,Visual Analogue Scale to Evaluate Myalgia,,,
 daily,SYMPTOMS: Indicate if experienced between 00:00 to 24:00 on day of assessment.,sympt_cramps,Muscle cramps,"1, Yes | 0, No | 99, Unknown","sudden, involuntary, painful contractions of one or more muscles that are temporary and usually resolve spontaneously after seconds to minutes.",
@@ -1398,6 +1398,8 @@ outcome,JOINT ASSESSMENT,joint_crp,CRP — C-Reactive Protein (mg/L),,,
 outcome,JOINT ASSESSMENT,joint_vas,Global Health VAS — Patient-reported,Very well | | Very poor,,
 outcome,JOINT ASSESSMENT,joint_stiff,Stiffness NRS — Patient-reported (0–10),"0, 0 — No stiffness | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 — Worst stiffness",,
 outcome,JOINT ASSESSMENT,joint_nrs,ESR (mm/hr) — if using DAS28-ESR variant,,,
+outcome,JOINT ASSESSMENT,,DAS28 Score,"if([joint_tjt]='1',0.56*sqrt(if([joint_tjt_calc28]=99,0,[joint_tjt_calc28]))+0.28*sqrt(if([joint_sjt_calc28]=99,0,[joint_sjt_calc28]))+0.36*log(if([joint_crp]='',0,[joint_crp])+1)+0.014*[joint_vas]+0.96,'')",,
+outcome,JOINT ASSESSMENT,,CHIK-DAS Score,"if([joint_tjt]='1',50+((-1.54+0.080*[joint_stiff]+0.119*if([joint_tjt_ankle]=99,0,[joint_tjt_ankle])+0.310*[joint_calc_das28])/0.0628),'')",,
 outcome,OUTCOME,outco_date,Outcome date,,This refers to the date of the outcome.,Enter the date of the outcome. (Use the format DD/MM/YYYY)
 outcome,OUTCOME,outco_outcome,Outcome,,This refers to the outcome.,Select the outcome that is true on the outcome date. Palliative care includes palliative discharge.
 outcome,OUTCOME,outco_selfcare,Ability to self-care at discharge versus before illness,"1, Same as before illness | 2, Worse | 3, Better | 99, Unknown",This refers to the ability to perform basic personal care activities and instrumental activities of daily living at discharge compared to before onset of illness.,Select the single most appropriate option that represents the ability to perform basic personal care activities and instrumental activities of daily living at discharge compared to before onset of illness.
