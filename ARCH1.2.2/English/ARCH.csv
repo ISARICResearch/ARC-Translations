@@ -1398,8 +1398,8 @@ outcome,JOINT ASSESSMENT,joint_crp,CRP — C-Reactive Protein (mg/L),,,
 outcome,JOINT ASSESSMENT,joint_vas,Global Health VAS — Patient-reported,Very well | | Very poor,,
 outcome,JOINT ASSESSMENT,joint_stiff,Stiffness NRS — Patient-reported (0–10),"0, 0 — No stiffness | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 — Worst stiffness",,
 outcome,JOINT ASSESSMENT,joint_nrs,ESR (mm/hr) — if using DAS28-ESR variant,,,
-outcome,JOINT ASSESSMENT,,DAS28 Score,"if([joint_tjt]='1',0.56*sqrt(if([joint_tjt_calc28]=99,0,[joint_tjt_calc28]))+0.28*sqrt(if([joint_sjt_calc28]=99,0,[joint_sjt_calc28]))+0.36*log(if([joint_crp]='',0,[joint_crp])+1)+0.014*[joint_vas]+0.96,'')",,
-outcome,JOINT ASSESSMENT,,CHIK-DAS Score,"if([joint_tjt]='1',50+((-1.54+0.080*[joint_stiff]+0.119*if([joint_tjt_ankle]=99,0,[joint_tjt_ankle])+0.310*[joint_calc_das28])/0.0628),'')",,
+outcome,JOINT ASSESSMENT,joint_calc_das28,DAS28 Score,"if([joint_tjt]='1',0.56*sqrt(if([joint_tjt_calc28]=99,0,[joint_tjt_calc28]))+0.28*sqrt(if([joint_sjt_calc28]=99,0,[joint_sjt_calc28]))+0.36*log(if([joint_crp]='',0,[joint_crp])+1)+0.014*[joint_vas]+0.96,'')",,
+outcome,JOINT ASSESSMENT,joint_calc_chikdas,CHIK-DAS Score,"if([joint_tjt]='1',50+((-1.54+0.080*[joint_stiff]+0.119*if([joint_tjt_ankle]=99,0,[joint_tjt_ankle])+0.310*[joint_calc_das28])/0.0628),'')",,
 outcome,OUTCOME,outco_date,Outcome date,,This refers to the date of the outcome.,Enter the date of the outcome. (Use the format DD/MM/YYYY)
 outcome,OUTCOME,outco_outcome,Outcome,,This refers to the outcome.,Select the outcome that is true on the outcome date. Palliative care includes palliative discharge.
 outcome,OUTCOME,outco_selfcare,Ability to self-care at discharge versus before illness,"1, Same as before illness | 2, Worse | 3, Better | 99, Unknown",This refers to the ability to perform basic personal care activities and instrumental activities of daily living at discharge compared to before onset of illness.,Select the single most appropriate option that represents the ability to perform basic personal care activities and instrumental activities of daily living at discharge compared to before onset of illness.
