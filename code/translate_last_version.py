@@ -67,33 +67,26 @@ paper_file_path_src=root_arc+'/paper_like_details.csv'
 paper_col_translate=['Paper-like section','Text']
 #for lists
 lists_file_path_src=root_arc+'/Lists/'
-#Lists in the format[('list',['columns'])]. Columns list should be all the possible name of columns to be translated of each list file
-#columns to be translated in lists files. This is used to identify the columns to be translated in each list file. It should contain all the possible name of columns to be translated of each list file
-lists=[
-	('conditions',['Condition','Site']), 
-	('demographics',['Country','Occupation','Race']), 
-	('drugs', ['Drugs (Generic)','Drugs']),
-    ('followup', ['Outcome','Sequelae']), 
-	('inclusion', ['Disease']), 
-	('outcome', ['Outcome','Disease']), 
-	('pathogens', ['Microorganism','GenomicRepository','Repository','Sample_Type'])
-]##This needs a better aproach to be more scalable and avoid hardcoding the list of columns for each list file. Maybe a module to recognize folders and files in Lists directory
+#Dynamically populate lists by discovering folders in the current version's Lists directory
+lists = sorted([
+    folder for folder in os.listdir(lists_file_path_src)
+    if os.path.isdir(os.path.join(lists_file_path_src, folder)) and not folder.startswith('.')
+])
+#print(f"Discovered lists from {lists_file_path_src}: {lists}")
 
 #path to the changes log file. This is used to identify the renamed variables and the variables that need to be translated.
 #most_recent_version_str = "ARCH1.2.0"##solo para pruebas
-changes_log_path=root_arc+'/Changes_Log/'+most_recent_version_str+'_ChangesLOG.xlsx' 
-print("changes_log_path: "+changes_log_path)
 #Translation execution
 for lang in langs:
     print("start lang: "+lang[0])
     while True:
         #directory to look for the previous version of the translation. This is used to copy the translations of unchanged variables and renamed variables
-        previous_version_str=get_previous_version(all_versions, most_recent_version_str)##solo para pruebas
-        print("Previopus version real: "+previous_version_str)
+        previous_version_str=get_previous_version(all_versions, most_recent_version_str)
         arch_dir_path_prev = root_arch_t+'/'+previous_version_str+'/'
         arc_translated_file=arch_dir_path_prev+lang[0]+'/ARCH.csv'
+        lists_translated_dir=arch_dir_path_prev+lang[0]+'/Lists/'
         ##paper_translated_file=arch_dir_path_prev+lang[0]+'/paper_like_details.csv' ##Using a previous paper_like_details translation is not working because no way track changes.
-        if os.path.exists(arch_dir_path_prev):
+        if os.path.exists(arc_translated_file):
             print("Previous translation directory found: "+arch_dir_path_prev)
             break
         else:
@@ -102,7 +95,7 @@ for lang in langs:
                 print("Previous translation directory is None: ")
                 break
     for li in lists:
-        ListTranslation.translate_lists(f'{lists_file_path_src}/', li[0], li[1], arch_dir_path_des, lang)
+        ListTranslation.translate_lists(f'{lists_file_path_src}/', li, arch_dir_path_des, lang, lists_translated_dir)
     archtranslation_lastversion.translate_arch(paper_file_path_src, paper_col_translate, arch_dir_path_des, lang, None, None)
-    archtranslation_lastversion.translate_arch(arch_file_path_src, arch_col_translate, arch_dir_path_des, lang, arc_translated_file, changes_log_path)
+    archtranslation_lastversion.translate_arch(arch_file_path_src, arch_col_translate, arch_dir_path_des, lang, arc_translated_file, None)
     print("--------")
