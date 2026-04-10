@@ -1,36 +1,36 @@
 Condition,Code,Library,Value,Selected
-Acute Respiratory Distress Syndrome (ARDS),67782005,SNOMED,1,1
-Bacteremia,5758002,SNOMED,2,1
-Myocardial Infarction,22298006,SNOMED,3,1
-Neurological finding,102957003,SNOMED,4,1
-Pneumonia,233604007,SNOMED,5,1
-Pulmonary Embolism,59282003,SNOMED,6,1
-Septic Shock,76571007,SNOMED,7,1
-Acquired coagulation disorder,234466008,SNOMED,8,1
-Acute renal failure syndrome,14669001,SNOMED,9,1
-Bleeding,131148009,SNOMED,10,1
-Cardiac Arrest,410429000,SNOMED,11,1
-Cardioembolic stroke,413758000,SNOMED,12,1
-Cardiogenic Shock,89138009,SNOMED,13,1
-Cerebellar stroke,16371781000119100,SNOMED,14,1
-Decompensation,87228002,SNOMED,15,1
-Deep venous thrombosis,128053003,SNOMED,16,1
-Disseminated Intravascular Coagulation (DIC),67406007,SNOMED,17,1
-Empyema,312682007,SNOMED,18,1
-Encephalitis,45170000,SNOMED,19,1
-Haemorrhagic stroke,1078001000000100,SNOMED,20,1
-Hospital acquired pneumonia,425464007,SNOMED,21,1
-Ischemic encephalopathy,389100007,SNOMED,22,1
-Ischemic stroke,422504002,SNOMED,23,1
-Large liver,80515008,SNOMED,24,1
-Meningitis,7180009,SNOMED,25,1
-Multisystem inflammatory syndrome in adults,1119306006,SNOMED,26,1
-Multisystem inflammatory syndrome in children,895448002,SNOMED,27,1
+Syndrome de détresse respiratoire aiguë (SDRA),67782005,SNOMED,1,1
+Bactériémie,5758002,SNOMED,2,1
+Infarctus du myocarde,22298006,SNOMED,3,1
+Découverte neurologique,102957003,SNOMED,4,1
+Pneumonie,233604007,SNOMED,5,1
+Embolie pulmonaire,59282003,SNOMED,6,1
+Choc septique,76571007,SNOMED,7,1
+Trouble acquis de la coagulation,234466008,SNOMED,8,1
+Syndrome d'insuffisance rénale aiguë,14669001,SNOMED,9,1
+Saignement,131148009,SNOMED,10,1
+Arrêt cardiaque,410429000,SNOMED,11,1
+AVC cardioembolique,413758000,SNOMED,12,1
+Choc cardiogénique,89138009,SNOMED,13,1
+AVC cérébelleux,16371781000119100,SNOMED,14,1
+Décompensation,87228002,SNOMED,15,1
+Thrombose veineuse profonde,128053003,SNOMED,16,1
+Coagulation intravasculaire disséminée (CIVD),67406007,SNOMED,17,1
+Empyème,312682007,SNOMED,18,1
+Encéphalite,45170000,SNOMED,19,1
+AVC hémorragique,1078001000000100,SNOMED,20,1
+Pneumonie nosocomiale,425464007,SNOMED,21,1
+Encéphalopathie ischémique,389100007,SNOMED,22,1
+AVC ischémique,422504002,SNOMED,23,1
+Gros foie,80515008,SNOMED,24,1
+Méningite,7180009,SNOMED,25,1
+Syndrome inflammatoire multisystémique chez l'adulte,1119306006,SNOMED,26,1
+Syndrome inflammatoire multisystémique chez l'enfant,895448002,SNOMED,27,1
 Pneumothorax,36118008,SNOMED,28,1
-Recurrent gastrointestinal bleeding,307296008,SNOMED,29,1
-Recurrent urinary tract infection,197927001,SNOMED,30,1
-Sepsis,91302008,SNOMED,31,1
-Thrombotic stroke,371040005,SNOMED,32,1
-Transient cerebral ischemia,266257000,SNOMED,33,1
-Transient hypotension,94501000000000,SNOMED,34,1
-Ventilator-Associated Pneumonia,429271009,SNOMED,35,1
+Saignements gastro-intestinaux récurrents,307296008,SNOMED,29,1
+Infection récurrente des voies urinaires,197927001,SNOMED,30,1
+État septique,91302008,SNOMED,31,1
+AVC thrombotique,371040005,SNOMED,32,1
+Ischémie cérébrale transitoire,266257000,SNOMED,33,1
+Hypotension transitoire,94501000000000,SNOMED,34,1
+Pneumonie sous ventilation assistée,429271009,SNOMED,35,1
