@@ -234,7 +234,7 @@ Mucor,49782006.0,SNOMED,fungi,,,,,,,,,,,,,,,235
 Virus des oreillons,50384007.0,SNOMED,virus,,,,,,,,,,,,1.0,,,236
 Mycobactérie,243368001.0,SNOMED,bacteria,,,,,,,,,,,,,,,237
 Mycobactérie leprae,58242002.0,SNOMED,bacteria,,,,,,,,,,,,,,,238
-Mycobactérie tuberculeuse,113861009.0,SNOMED,bacteria,,,,,,,,,,,,,,,239
+Mycobactérie tuberculose,113861009.0,SNOMED,bacteria,,,,,,,,,,,,,,,239
 "Mycobactérie, non tuberculeuse",110379001.0,SNOMED,bacteria,,,,,,,,,,,,,,,240
 Mycoplasma agalactiae,16377009.0,SNOMED,bacteria,,,,,,,,,,,,,,,241
 Mycoplasma pneumoniae,58720004.0,SNOMED,bacteria,,,,,,,,,,,,,,,242
@@ -314,7 +314,7 @@ Scédosporium,31901009.0,SNOMED,fungi,,,,,,,,,,,,,,,315
 Schistosome,53583001.0,SNOMED,"parasite, helminth",,,,,,,,,,,,,,,316
 Schistosoma guineensis,,,"parasite, helminth",,,,,,,,,,,,,,,317
 Schistosoma hématobium,3294004.0,SNOMED,"parasite, helminth",,,,,,,,,,,,,,,318
-Schistosome intercalatum,15685002.0,SNOMED,"parasite, helminth",,,,,,,,,,,,,,,319
+Schistosoma intercalatum,15685002.0,SNOMED,"parasite, helminth",,,,,,,,,,,,,,,319
 Schistosoma japonicum,5249008.0,SNOMED,"parasite, helminth",,,,,,,,,,,,,,,320
 Schistosoma mansoni,11168007.0,SNOMED,"parasite, helminth",,,,,,,,,,,,,,,321
 Schistosoma mekongi,75475007.0,SNOMED,"parasite, helminth",,,,,,,,,,,,,,,322

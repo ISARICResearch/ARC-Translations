@@ -26,10 +26,12 @@ def translate_arch(file_path, columns_df, arch_dir_path_des, lang, prev_translat
       - For variables not in the above sets, previous translations are reused if available; otherwise translated.
     """
     filename = os.path.basename(file_path)
-    arch_file_path_des = os.path.join(arch_dir_path_des_dir, filename)
-    if os.path.exists(arch_file_path_des):
+    arch_dir_path_des_file = os.path.join(arch_dir_path_des, lang[0]) + os.sep + filename
+    total_vars = 0
+    total_vars_found_prev = 0
+    if os.path.exists(arch_dir_path_des_file):
         print("File already created: "+filename)
-        return #skip translation for this file
+        return (0, 0) #skip translation for this file
     
     df = pd.read_csv(file_path, sep=',')
 
@@ -53,10 +55,8 @@ def translate_arch(file_path, columns_df, arch_dir_path_des, lang, prev_translat
     else:
         print("No previous translation file found at "+str(prev_translation_path)+". Will use empty previous translations (translate all).")
     
-    
     # Prepare output df: for ARCH.csv behavior was to overwrite the original columns with translations.
     df_final = df.copy()
-
     # Helper: translation function with safe fallback
     def do_translate(text):
         if pd.isna(text) or text is None:
@@ -77,7 +77,6 @@ def translate_arch(file_path, columns_df, arch_dir_path_des, lang, prev_translat
 
     #counting variables
     total_vars = len(df)
-    total_vars_found_prev = 0
     for idx, row in df_final.iterrows():
         #ux=input("Quiere continuar con la siguiente?")##solo para pruebas
         var = str(row.get('Variable', '')).strip()
@@ -89,8 +88,8 @@ def translate_arch(file_path, columns_df, arch_dir_path_des, lang, prev_translat
         # If variable unchanged and prev translation available, copy it
         if prev_map.get(var) is not None and  filename != 'paper_like_details.csv':
             #print("Variable found on previous translation: "+var)
-            total_vars_found_prev += 1
             prev_row = prev_map[var]
+            total_vars_found_prev += 1
             for col in columns_df:
                 # ARCH.csv: previous translations overwrite original column value
                 if col in prev_row and prev_row.get(col) is not None:
@@ -112,7 +111,8 @@ def translate_arch(file_path, columns_df, arch_dir_path_des, lang, prev_translat
     #df_final.loc[:, 'Language Speaker Reviewed'] = None
     #df_final.loc[:, 'Clinical Language Speaker Reviewed'] = None
 
-    df_final.to_csv(arch_file_path_des, index=False)
-    print(f"Total vars found in previous translations vs total translated variables: {total_vars_found_prev}/{total_vars}")
-    print(f"Translation complete. Output saved to {arch_file_path_des}")
+    df_final.to_csv(os.path.join(arch_dir_path_des_dir, filename), index=False)
+    #print(f"Total vars found in previous translations vs total translated variables: {total_vars_found_prev}/{total_vars}")
+    print(f"Translation complete. Output saved to {arch_dir_path_des_dir}/{filename}")
     print("**********")
+    return (total_vars_found_prev, total_vars)

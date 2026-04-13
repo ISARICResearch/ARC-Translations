@@ -1,4 +1,5 @@
 import os
+import sys
 from numpy import var
 import pandas as pd
 from deep_translator import  (GoogleTranslator, PonsTranslator, ChatGptTranslator)
@@ -20,19 +21,12 @@ def translate_lists(dir_path, list_item, output_dir_path, lang, lists_translated
     
     #going through directory dir_path + list_item
     dir_path_item=dir_path+"/"+list_item
+    tl=0#total de filas variables en los archivos de listas
+    tt=0#total de filas variables encontradas en la traducción previa
     for path, folders, files in os.walk(dir_path_item):
         for filename in files:
-            prev_df = None
-            prev_map = {}
-            lists_translated_file = lists_translated_dir+"/"+list_item+"/"+filename
-            if lists_translated_file and os.path.exists(lists_translated_file):
-                prev_df = pd.read_csv(lists_translated_file, sep=',', dtype=str).fillna('')
-                # build quick lookup map by Value in each csv
-                if 'Value' in prev_df.columns:
-                    prev_map = {r['Value']: r for _, r in prev_df.iterrows()}
-            else:
-                print("No previous translation file found at "+str(lists_translated_file)+". Will use empty previous translations (translate all).")
-            
+            ##print(f"Translating list: {list_item} file: {filename} to language: {lang[0]}")
+            ##ux=input("Quiere continuar?")##solo para pruebas
             try:
                 #first the version folder if it not created
                 os.makedirs(output_dir_path, exist_ok=True)
@@ -49,16 +43,28 @@ def translate_lists(dir_path, list_item, output_dir_path, lang, lists_translated
                 sys.exit("Can't create {dir}: {err}".format(dir=output_dir_path_l3, err=e))
             
             if os.path.exists(os.path.join(output_dir_path_l3,filename)):
-                print("File already created: "+filename)
+                #print("File already created: "+filename )
                 continue #go to next file
+            
+            prev_df = None
+            prev_map = {}
+            lists_translated_file = lists_translated_dir+"/"+list_item+"/"+filename
+            if lists_translated_file and os.path.exists(lists_translated_file):
+                prev_df = pd.read_csv(lists_translated_file, sep=',', dtype=str).fillna('')
+                # build quick lookup map by Value in each csv
+                if 'Value' in prev_df.columns:
+                    prev_map = {r['Value']: r for _, r in prev_df.iterrows()}
+                #print("Found previous translation file at "+str(lists_translated_file)+" with "+str(len(prev_map))+" rows mapped. Will use existing translations.")
+            #print(prev_map)
 
             # Read the CSV file
             df = pd.read_csv(os.path.join(dir_path_item,filename), sep=',')
             df_final = df.copy()
-
+            first_col = df_final.columns[0]
             # Helper: translation function with safe fallback
             def do_translate(text):
                 if pd.isna(text) or text is None:
+                    print("dev vacio")
                     return ''
                 s = str(text)
                 if not s or len(s) >= 5000:
@@ -68,6 +74,7 @@ def translate_lists(dir_path, list_item, output_dir_path, lang, lists_translated
                     #return "Enviada para traducir"
                 except Exception:
                     try:
+                        print("error con google translator... trying with another translator")
                         # Second attempt: Pons Translator (if Google fails)
                         return PonsTranslator(source='en', target=lang[1]).translate(text=s)
                     except Exception:
@@ -79,27 +86,26 @@ def translate_lists(dir_path, list_item, output_dir_path, lang, lists_translated
             for idx, row in df_final.iterrows():
                 #ux=input("Quiere continuar con la siguiente?")##solo para pruebas
                 valor= str(row.get('Value', '')).strip()
-                print("Lista value actual: "+valor)
                 if not valor:
                     continue
 
                 # If lists column unchanged and prev translation available, copy it
                 if prev_map.get(valor) is not None:
-                    print("Lista valor found on previous translation: "+valor)
-                    total_vars_found_prev += 1
                     prev_row = prev_map[valor]
-                    #listFile.csv: previous translations overwrite original column value
-                    if prev_row.get(0) is not None:
-                        df_final.at[idx, 0] = prev_row.get(0)
+                    
+                    if prev_row.iloc[0] is not None:
+                        df_final.at[idx, first_col] = prev_row.iloc[0]
+                        #print("Found on previous translation: valor: "+valor+" -final: "+df_final.iat[idx, 0])
+                        total_vars_found_prev += 1
                     continue
 
                 # Otherwise, translate the required columns for this row
-                print("Lista value to translate: "+valor+" because previous translations are not available: ")
-                original_text = row.get(0, '')
-                translated = do_translate(original_text)            
-                df_final.at[idx, 0] = translated
+                
+                original_text = row.get(first_col, '')
+                translated = do_translate(original_text)
+                df_final.at[idx, first_col] = translated
+                #print("Value translated: "+valor+" -original: "+original_text+" -translated: "+df_final.at[idx, first_col])
             
-
             #lambda x:GoogleTranslator(source='en', target=lang[1]).translate(text=x) if pd.notnull(x) else x
             #lambda x:PonsTranslator(source='en', target=lang[1]).translate(x) if pd.notnull(x) else x
             #lambda x:ChatGptTranslator(api_key=openaiKey, source='en', target=lang[1]).translate(text=x) if pd.notnull(x) else x
@@ -108,5 +114,8 @@ def translate_lists(dir_path, list_item, output_dir_path, lang, lists_translated
             # Save the updated DataFrame to a new CSV file
             df_final.to_csv(os.path.join(output_dir_path_l3,filename), index=False)
             #print(df.columns)
-            print(f"Total vars found in previous translations vs total translated variables: {total_vars_found_prev}/{total_vars}")
-            print(f"List Translation complete. Output saved to {output_dir_path_l3} file: {filename}")
+            #print(f"Total vars found in previous translations vs total variables: {total_vars_found_prev}/{total_vars}")
+            #print(f"List Translation complete. Output saved to {output_dir_path_l3} file: {filename}")
+            tt=tt+total_vars_found_prev#sumatoria total de variables en traduciones previas
+            tl=tl+total_vars#sumatoria total de variables en las listas
+    return (tt,tl)

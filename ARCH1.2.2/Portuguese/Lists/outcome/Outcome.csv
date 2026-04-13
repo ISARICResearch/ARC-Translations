@@ -1,9 +1,9 @@
-Outcome,Selected,preset_ARChetype Syndromic CRF_Arbovirus,Value,0
-"Alive, not admitted",,1,7,
-Death,1.0,1,4,
-Discharged against medical advice,1.0,1,6,
-Discharged alive,1.0,1,1,
-Palliative care,1.0,1,5,
-Still hospitalised,1.0,1,2,
-Transfer to other facility,1.0,1,3,
-Hospitalized,,1,8,
+Outcome,Selected,preset_ARChetype Syndromic CRF_Arbovirus,Value
+Transferência para outra instalação,,1,7
+Descarregado vivo,1.0,1,4
+Ainda hospitalizado,1.0,1,6
+"Vivo, não admitido",1.0,1,1
+Cuidados paliativos,1.0,1,5
+Morte,1.0,1,2
+Alta contra orientação médica,1.0,1,3
+Hospitalizado,,1,8
