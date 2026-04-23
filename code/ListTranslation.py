@@ -54,9 +54,7 @@ def translate_lists(dir_path, list_item, output_dir_path, lang, lists_translated
                 # build quick lookup map by Value in each csv
                 if 'Value' in prev_df.columns:
                     prev_map = {r['Value']: r for _, r in prev_df.iterrows()}
-                #print("Found previous translation file at "+str(lists_translated_file)+" with "+str(len(prev_map))+" rows mapped. Will use existing translations.")
-            #print(prev_map)
-
+                
             # Read the CSV file
             df = pd.read_csv(os.path.join(dir_path_item,filename), sep=',')
             df_final = df.copy()
@@ -104,18 +102,10 @@ def translate_lists(dir_path, list_item, output_dir_path, lang, lists_translated
                 original_text = row.get(first_col, '')
                 translated = do_translate(original_text)
                 df_final.at[idx, first_col] = translated
-                #print("Value translated: "+valor+" -original: "+original_text+" -translated: "+df_final.at[idx, first_col])
             
-            #lambda x:GoogleTranslator(source='en', target=lang[1]).translate(text=x) if pd.notnull(x) else x
-            #lambda x:PonsTranslator(source='en', target=lang[1]).translate(x) if pd.notnull(x) else x
-            #lambda x:ChatGptTranslator(api_key=openaiKey, source='en', target=lang[1]).translate(text=x) if pd.notnull(x) else x
-            #df_final.loc[:,'Language Speaker Reviewed'] = None
-            #df_final.loc[:,'Clinical Language Speaker Reviewed'] = None
             # Save the updated DataFrame to a new CSV file
             df_final.to_csv(os.path.join(output_dir_path_l3,filename), index=False)
-            #print(df.columns)
-            #print(f"Total vars found in previous translations vs total variables: {total_vars_found_prev}/{total_vars}")
-            #print(f"List Translation complete. Output saved to {output_dir_path_l3} file: {filename}")
+            
             tt=tt+total_vars_found_prev#sumatoria total de variables en traduciones previas
             tl=tl+total_vars#sumatoria total de variables en las listas
     return (tt,tl)
