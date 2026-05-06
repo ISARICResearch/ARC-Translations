@@ -610,11 +610,8 @@ daily,SYMPTOMS: Indicate if experienced between 00:00 to 24:00 on day of assessm
 daily,SYMPTOMS: Indicate if experienced between 00:00 to 24:00 on day of assessment.,sympt_tinnitus,Tinnitus,"1, Yes | 0, No | 99, Unknown",This refers to an abnormal perception of sounds experienced by an individual in the absence of auditory stimulation.,"Indicate 'Yes', if the patient experienced this between 00:00 to 24:00 on day of assessment."
 daily,SYMPTOMS: Indicate if experienced between 00:00 to 24:00 on day of assessment.,sympt_parot,Parotitis,"1, Yes | 0, No | 99, Unknown",This refers to inflammation of the parotid glands.,"Indicate 'Yes', if the patient has experienced between 00:00 to 24:00 on day of assessment."
 daily,SYMPTOMS: Indicate if experienced between 00:00 to 24:00 on day of assessment.,sympt_paed,Paediatric-specific symptoms,,,
-"[initial_assessment_arm_1][demog_calcage]<=365""",,,,,,1
 daily,SYMPTOMS: Indicate if experienced between 00:00 to 24:00 on day of assessment.,sympt_contcry,Continuous crying,"1, Yes | 0, No | 99, Unknown",,
-"[initial_assessment_arm_1][demog_calcage]<=365""",,,,,,1
 daily,SYMPTOMS: Indicate if experienced between 00:00 to 24:00 on day of assessment.,sympt_feedingdiff,Feeding difficulty,"1, Yes | 0, No | 99, Unknown",,
-"[initial_assessment_arm_1][demog_calcage]<=365""",,,,,,1
 daily,SYMPTOMS: Indicate if experienced between 00:00 to 24:00 on day of assessment.,sympt_otherdesc,Other  symptoms,,,
 daily,SYMPTOMS: Indicate if experienced between 00:00 to 24:00 on day of assessment.,sympt_unlisted,Other symptom(s),"1, Yes | 0, No | 99, Unknown",This refers the presence of an alternative sign(s) or symptom(s) not listed above.,"Indicate 'Yes', if the patient has experienced another sign or symptom not listed above between 00:00 to 24:00 on day of assessment."
 daily,SIGNS: Record the clinical findings observed between 00:00 and 24:00 on the day of assessment,sign_dailydata,Enter clinical signs data for this date?,"1, Yes | 0, No",This refers to signs and symptoms recorded o this date.,"Indicate 'Yes', if you want to record signs and symptoms data for this day of assessment. "
@@ -689,11 +686,8 @@ daily,SIGNS: Record the clinical findings observed between 00:00 and 24:00 on th
 daily,SIGNS: Record the clinical findings observed between 00:00 and 24:00 on the day of assessment,sign_nasalflar,Nasal flaring,"1, Yes | 0, No | 99, Unknown",,
 daily,SIGNS: Record the clinical findings observed between 00:00 and 24:00 on the day of assessment,sign_grunt,Grunting,"1, Yes | 0, No | 99, Unknown",,
 daily,SIGNS: Record the clinical findings observed between 00:00 and 24:00 on the day of assessment,sign_ftt,Failure to thrive,"1, Yes | 0, No | 99, Unknown",,
-"[initial_assessment_arm_1][demog_calcage]<=28""",Paediatric,,,,,
 daily,SIGNS: Record the clinical findings observed between 00:00 and 24:00 on the day of assessment,sign_hypotonia,Decreased tone / hypotonia,"1, Yes | 0, No | 99, Unknown",,
-"[initial_assessment_arm_1][demog_calcage]<=28""",Paediatric,,,,,
 daily,SIGNS: Record the clinical findings observed between 00:00 and 24:00 on the day of assessment,sign_bulgefont,Bulging fontanelle,"1, Yes | 0, No | 99, Unknown",,
-"[initial_assessment_arm_1][demog_calcage]<=28""",Paediatric,,,,,
 daily,SIGNS: Record the clinical findings observed between 00:00 and 24:00 on the day of assessment,sign_otherdesc,Other  signs,,,
 daily,SIGNS: Record the clinical findings observed between 00:00 and 24:00 on the day of assessment,sign_unlisted,Other sign(s),"1, Yes | 0, No | 99, Unknown",This refers the presence of an alternative sign(s) or symptom(s) not listed above.,"Indicate 'Yes', if the patient has experienced another sign or symptom not listed above between 00:00 to 24:00 on day of assessment."
 daily,SKIN & MUCOSA ASSESSMENT: Record the information furthest from normal between 00:00 to 24:00 on day of assessment.,lesion_dailydata,Enter Skin and Mucosa Assessment data for this date?,"1, Yes | 0, No",The following questions pertain to clinical inspection of skin lesions. Data recorded in this section should detail the conditions present on the date of assessment. This section should be completed for date of admission and any subsequent day as per the local protocol.,"Indicate 'Yes', to enter information pertaining to clinical inspection of skin lesions on the day of assessment."
@@ -1236,8 +1230,7 @@ pregnancy,PREGNANCY DETAILS,preg_date,Date of form completion,,,
 pregnancy,PREGNANCY DETAILS,pregdet_medirep,Medically assisted reproduction? ,"1, Yes | 0, No | 99, Unknown",This refers to medical procedures used primarily to address infertility.,
 pregnancy,PREGNANCY DETAILS,pregdet_edd,Estimated date of delivery (EDD),,"This refers to the expected date on which a pregnant woman will give birth. If not available, provide LMP below if possible",
 pregnancy,PREGNANCY DETAILS,pregdet_lmp,Date of last menstrual period (LMP) ,,This refers to the date of the first day of the most recent menstrual cycle.,
-pregnancy,PREGNANCY DETAILS,pregdet_parity,Parity,,"This refers to the number of pregnancies that have progressed to a viable gestational age (usually ≥20 weeks), regardless of whether the infant was born alive or stillborn.",
-Multiple births (e.g.," twins) from a single pregnancy are counted as one parity event.""",,,,1,
+pregnancy,PREGNANCY DETAILS,pregdet_parity,Parity,,"This refers to the number of pregnancies that have progressed to a viable gestational age (usually ≥20 weeks), regardless of whether the infant was born alive or stillborn. Multiple births (e.g., twins) from a single pregnancy are counted as one parity event.",
 pregnancy,PREGNANCY DETAILS,pregdet_gravidity,Gravidity,,"This refer to the total number of times a woman has been pregnant, regardless of the outcome of the pregnancies. This includes current pregnancy, miscarriages, abortions, ectopic pregnancies, and stillbirths.",
 pregnancy,PREGNANCY DETAILS,pregdet_prevcs,Number of previous surgical (caesarean section) deliveries.,,This refers to the number of previous surgical deliveries of one or more intrauterine fetuses though an abdominal incision (cesaerian section).,
 pregnancy,PREGNANCY DETAILS,pregdet_fetnum,Number of embryos/foetuses in this pregnancy.,,This refers to the number of embryos/fetuses in this pregnancy,
