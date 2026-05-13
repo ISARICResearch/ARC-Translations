@@ -42,6 +42,7 @@ def translate_arch(file_path, columns_df, arch_dir_path_des, lang, prev_translat
     # Load previous translations if provided and build lookup maps
     prev_df = None
     prev_map = {}
+    prev_map_eng = {}
     map_var_form_section = {}
     prev_form = {}
     prev_section= {}
@@ -53,6 +54,7 @@ def translate_arch(file_path, columns_df, arch_dir_path_des, lang, prev_translat
             for idx, r in prev_english_df.iterrows():
                 var = str(r.get('Variable', '')).strip()
                 if var:
+                    prev_map_eng[var] = r
                     form = str(r.get('Form', '')).strip()
                     section = str(r.get('Section', '')).strip()
                     map_var_form_section[var] = {
@@ -85,7 +87,8 @@ def translate_arch(file_path, columns_df, arch_dir_path_des, lang, prev_translat
     else:
         print("No previous translation directory found at "+str(arch_dir_path_prev)+".")
 
-    #print(f"prev form: {prev_form}")
+    #print(f"prev english: {prev_map_eng['demog_birthknow']}")
+    #print(f"prev spanish: {prev_map['demog_birthknow']}")
     #print(f"prev section: {prev_section}")   
     
     # Helper: translation function with safe fallback
@@ -108,6 +111,8 @@ def translate_arch(file_path, columns_df, arch_dir_path_des, lang, prev_translat
 
     #counting variables
     total_vars = len(df)
+    calls_translator = 0
+    cols_translated = 0
     for idx, row in df_final.iterrows():
         #ux=input("Quiere continuar con la siguiente?")##solo para pruebas
         var = str(row.get('Variable', '')).strip()
@@ -121,19 +126,38 @@ def translate_arch(file_path, columns_df, arch_dir_path_des, lang, prev_translat
             total_vars_found_prev += 1
         else:
             prev_row = None
+        
+        if prev_map_eng.get(var) is not None:
+            #print("Variable found on previous english csv: "+var)
+            prev_row_eng = prev_map_eng[var]
+        else:
+            prev_row_eng = None
         # Otherwise, translate the required columns for this row
         #print("Variable a traducir: "+var+" porque 1) es nueva o sufrió cambios de contenido o 2) no hay traducción previa: ")
         for col in columns_df:
+            cols_translated += 1
             original_text = row.get(col, '')
             if col == 'Form' and prev_form.get(original_text) is not None:
                 translated = prev_form.get(original_text)
             elif col == 'Section' and prev_section.get(original_text) is not None:
                 translated = prev_section.get(original_text)
-            # If variable unchanged and prev translation available, copy it  
-            elif prev_row is not None and col in prev_row and prev_row.get(col) is not None:
-                translated = prev_row.get(col)
-            else:            
-                translated = do_translate(original_text)
+            else: # for the columns that are not 'Form' or 'Section':
+                # Check if text has changed compared to previous English version
+                text_changed = (
+                    prev_row_eng is None or 
+                    prev_row_eng.get(col) is None or 
+                    str(original_text).strip() != str(prev_row_eng.get(col, '')).strip()
+                )
+                
+                # Reuse previous translation if available and text hasn't changed
+                if not text_changed and prev_row is not None and prev_row.get(col) is not None:
+                    translated = prev_row.get(col)
+                # Otherwise, use previous translation if available, or translate
+                elif prev_row is not None and prev_row.get(col) is not None:
+                    translated = prev_row.get(col)
+                else:
+                    translated = do_translate(original_text)
+                    calls_translator += 1
 
             df_final.at[idx, col] = translated
         filled = int(100 * idx / total_vars)
@@ -143,7 +167,9 @@ def translate_arch(file_path, columns_df, arch_dir_path_des, lang, prev_translat
         time.sleep(0.5)
 
     df_final.to_csv(os.path.join(arch_dir_path_des_dir, filename), index=False)
+    print("**********")
     print("****ARCH " + lang[0] + " Finished******")
+    print(f"Total count of values in columns to translate vs total calls to translator: {cols_translated}/{calls_translator}")
     print(f"Total vars found in previous translations vs total translated variables: {total_vars_found_prev}/{total_vars}")
     print(f"ARCH Translation complete. Output saved to {arch_dir_path_des_dir}/{filename}")
     print("**********")
