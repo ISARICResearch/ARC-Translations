@@ -27,7 +27,7 @@ def translate_arch(file_path, columns_df, arch_dir_path_des, lang, prev_translat
         print("ARCH File already created: "+filename)
         return (0, 0) #skip translation for this file
     
-    df = pd.read_csv(file_path, sep=',')
+    df = pd.read_csv(file_path, sep=',', dtype=str).fillna('')
     # Prepare output df: for ARCH.csv behavior was to overwrite the original columns with translations.
     cols_to_keep = ['Form', 'Section', 'Variable'] + [col for col in columns_df if col not in ['Form', 'Section', 'Variable']]
     df_final = df[cols_to_keep].copy()
@@ -144,20 +144,27 @@ def translate_arch(file_path, columns_df, arch_dir_path_des, lang, prev_translat
             else: # for the columns that are not 'Form' or 'Section':
                 # Check if text has changed compared to previous English version
                 text_changed = (
-                    prev_row_eng is None or 
-                    prev_row_eng.get(col) is None or 
-                    str(original_text).strip() != str(prev_row_eng.get(col, '')).strip()
+                    prev_row_eng is None or #Si toda la fila es none indica que es una nueva variable
+                    prev_row_eng.get(col) is None or #"Si la columna es None, indica que no había esa columna en la version anterior"
+                    str(original_text).strip() != str(prev_row_eng.get(col, '')).strip() #Si hay diferencia entre la anterior en ingles y la actual
                 )
-                
+                        
                 # Reuse previous translation if available and text hasn't changed
-                if not text_changed and prev_row is not None and prev_row.get(col) is not None:
-                    translated = prev_row.get(col)
-                # Otherwise, use previous translation if available, or translate
-                elif prev_row is not None and prev_row.get(col) is not None:
-                    translated = prev_row.get(col)
-                else:
+                path_t=False
+                if text_changed: #If text has changed, we need to translate it again, even if there is a previous translation
                     translated = do_translate(original_text)
                     calls_translator += 1
+                    path_t=True
+                elif prev_row is None or prev_row.get(col) is None: #only if the previous translation is None, we need to translate it again, even if the text has not changed
+                    translated = do_translate(original_text)
+                    calls_translator += 1
+                    path_t=True
+                else:#If the text has not changed and there is a previous translation, we can reuse it
+                    translated = prev_row.get(col)
+                    path_t=False
+                
+                #if col == "Answer Options":
+                #print(f"\r\n Var'{var}' in col: '{col}', Changed?: {text_changed} original: '{str(original_text).strip()}' prev english: '{str(prev_row_eng.get(col, '')).strip() if prev_row_eng is not None else 'N/A'}' prev translation: '{str(prev_row.get(col, '')).strip() if prev_row is not None else 'N/A'}' translated: {path_t}'\r\n ")
 
             df_final.at[idx, col] = translated
         filled = int(100 * idx / total_vars)

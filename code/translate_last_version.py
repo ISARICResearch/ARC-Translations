@@ -34,6 +34,7 @@ def get_previous_version(all_versions, current_version):
 # Import the module where the needed scripts are.
 #code to run locally. uncomment when run locally 
 root_arch_t='F:/UAD/CONTAGIO/WP2/task2.2/code/ARC-Translations' #this is the directory where the translations are
+#root_arch_t='F:/UAD/CONTAGIO/WP2/task2.2/ARC-Translations_bu2025' #Solo para pruebas
 #Directory where the BRIDGE repository is
 bridge_path="F:/UAD/CONTAGIO/WP2/task2.2/code/BRIDGE"
 sys.path.insert(0, bridge_path)  # Use insert(0) for priority
@@ -45,7 +46,7 @@ arc_client = ArcApiClient()
 all_versions = arc_client.get_arc_version_list()
 #print("All versions:", all_versions)
 most_recent_version_str = all_versions[0] if all_versions else None
-#most_recent_version_str = "v1.2.1"#solo para prueba
+#most_recent_version_str = "v1.3.0"#solo para prueba
 print("Most recent version:", most_recent_version_str)
 previous_version_str = all_versions[1] if len(all_versions) > 1 else None
 print("previous_version_str:", previous_version_str)
@@ -95,6 +96,7 @@ for lang in langs:
                 break
     ttl=0#counter for total variables in lists
     ttt=0#counter for total variables not translated because found in previous translations in lists
+    
     for li in lists:
         total=ListTranslation.translate_lists(f'{lists_file_path_src}/', li, arch_dir_path_des, lang, lists_translated_dir)
         print("LIST: "+li+" Translations found in previous: "+str(total[0])+" out of "+str(total[1]))
@@ -102,9 +104,11 @@ for lang in langs:
         ttl=ttl+total[1]
     print(f"TOTAL LISTS: # variables found translated: "+str(ttt)+" out of total variables in lists: "+str(ttl))
     #ux=input("Quiere continuar con la siguiente?")##solo para pruebas
+    #paper_t=[1,1] # type: ignore
     paper_t=papertranslation.translate_paper(paper_file_path_src, paper_col_translate, arch_dir_path_des, lang, None, None)
     print(f"PAPER_LIKE: Total vars found in previous translations vs total: {paper_t[0]}/{paper_t[1]}")
     #ux=input("Quiere continuar con la siguiente?")##solo para pruebas    
+    #arch_t=[1,1] # type: ignore
     arch_t=archtranslation_lastversion.translate_arch(arch_file_path_src, arch_col_translate, arch_dir_path_des, lang, arc_translated_file, arch_dir_path_prev)    
     print(f"ARCH: Total vars found in previous translations vs total: {arch_t[0]}/{arch_t[1]}")
     print("--------")

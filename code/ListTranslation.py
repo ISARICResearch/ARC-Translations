@@ -25,8 +25,8 @@ def translate_lists(dir_path, list_item, output_dir_path, lang, lists_translated
     tt=0#total de filas variables encontradas en la traducción previa
     for path, folders, files in os.walk(dir_path_item):
         for filename in files:
-            ##print(f"Translating list: {list_item} file: {filename} to language: {lang[0]}")
-            ##ux=input("Quiere continuar?")##solo para pruebas
+            print(f"Translating list: {list_item} file: {filename} to language: {lang[0]}")
+            #ux=input("Quiere continuar?")##solo para pruebas
             try:
                 #first the version folder if it not created
                 os.makedirs(output_dir_path, exist_ok=True)
@@ -43,22 +43,24 @@ def translate_lists(dir_path, list_item, output_dir_path, lang, lists_translated
                 sys.exit("Can't create {dir}: {err}".format(dir=output_dir_path_l3, err=e))
             
             if os.path.exists(os.path.join(output_dir_path_l3,filename)):
-                #print("File already created: "+filename )
+                print("File already created: "+filename )
                 continue #go to next file
             
             prev_df = None
             prev_map = {}
+            
             lists_translated_file = lists_translated_dir+"/"+list_item+"/"+filename
             if lists_translated_file and os.path.exists(lists_translated_file):
                 prev_df = pd.read_csv(lists_translated_file, sep=',', dtype=str).fillna('')
                 # build quick lookup map by Value in each csv
                 if 'Value' in prev_df.columns:
                     prev_map = {r['Value']: r for _, r in prev_df.iterrows()}
-                
+            
             # Read the CSV file
             df = pd.read_csv(os.path.join(dir_path_item,filename), sep=',')
             df_final = df.copy()
             first_col = df_final.columns[0]
+            second_col = df_final.columns[1]
             # Helper: translation function with safe fallback
             def do_translate(text):
                 if pd.isna(text) or text is None:
@@ -93,6 +95,8 @@ def translate_lists(dir_path, list_item, output_dir_path, lang, lists_translated
                     
                     if prev_row.iloc[0] is not None:
                         df_final.at[idx, first_col] = prev_row.iloc[0]
+                        if filename=="Country.csv":
+                            df_final.at[idx, second_col] = prev_row.iloc[1]
                         #print("Found on previous translation: valor: "+valor+" -final: "+df_final.iat[idx, 0])
                         total_vars_found_prev += 1
                     continue
