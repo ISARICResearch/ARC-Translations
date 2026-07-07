@@ -1,0 +1,20 @@
+name: Notify LINK repo
+
+on:
+  push:
+      branches:
+       - main
+  workflow_dispatch:
+
+jobs:
+  dispatch:
+    runs-on: ubuntu-latest
+    if: github.actor != 'aidanmarler' || github.event_name == 'workflow_dispatch'
+    steps:
+      - name: Trigger LINK update
+        run: |
+          curl -X POST \
+            -H "Authorization: Bearer ${{ secrets.LINK_DISPATCH_TOKEN }}" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/aidanmarler/LINK/dispatches \
+            -d '{"event_type": "arc-translations-updated"}'

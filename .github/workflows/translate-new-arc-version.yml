@@ -1,0 +1,36 @@
+on:
+  repository_dispatch:
+    types: [arc-updated]  
+  workflow_dispatch:
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+  
+jobs:
+  translate-new-arc-version:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4.2.2
+
+      # This should all change to run your code to translate arc
+
+      # Then, tests should run
+
+      # Then, push to github
+
+
+      #- name: Setup Node.js
+      #  uses: actions/setup-node@v4.4.0
+      #  with:
+      #    node-version: '24'
+      #    cache: 'npm'
+
+      #- name: Install dependencies
+      #  run: npm ci
+
+      #- name: Translate New Arc Version
+      #  run: npx tsx src/lib/actions/translate-new-arc-version.py
+
+    
