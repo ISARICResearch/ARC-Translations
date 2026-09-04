@@ -2,6 +2,8 @@ import sys
 import os
 import json
 import re
+from bridge.arc.arc_api import ArcApiClient
+from utils import init_dir
 
 def _extract_version_nums(s):# return tuple of integer for ARC versioning "ARCH1.2.2-beta" -> (1,2,2)
     nums = re.findall(r'\d+', s)
@@ -31,16 +33,23 @@ def get_previous_version(all_versions, current_version):
             break# once we hit a version >= current, the last prev is the immediate previous
     return prev
 
+'''
+
 # Import the module where the needed scripts are.
 #code to run locally. uncomment when run locally 
 root_arch_t='F:/UAD/CONTAGIO/WP2/task2.2/code/ARC-Translations' #this is the directory where the translations are
-#root_arch_t='F:/UAD/CONTAGIO/WP2/task2.2/ARC-Translations_bu2025' #Solo para pruebas
 #Directory where the BRIDGE repository is
 bridge_path="F:/UAD/CONTAGIO/WP2/task2.2/code/BRIDGE"
 sys.path.insert(0, bridge_path)  # Use insert(0) for priority
 from bridge.arc.arc_api import ArcApiClient
+'''
 
-import archtranslation_lastversion, papertranslation, ListTranslation
+# Get the project root path
+root_arch_t = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+print("root_arch_t:"+root_arch_t)
+
+import translation.ArchTranslation as ArchTranslation, translation.PaperTranslation as PaperTranslation, translation.ListTranslation as ListTranslation
+
 #get the versions from arch repository
 arc_client = ArcApiClient()
 all_versions = arc_client.get_arc_version_list()
@@ -50,32 +59,67 @@ most_recent_version_str = all_versions[0] if all_versions else None
 print("Most recent version:", most_recent_version_str)
 previous_version_str = all_versions[1] if len(all_versions) > 1 else None
 print("previous_version_str:", previous_version_str)
-print("***")
+
+
+
+
 
 
 ###Translations parameters:
 #Language definitions to translate [('Language', 'Lang code')]
-langs=[('French', 'fr'),('Spanish', 'es'),('Portuguese', 'pt')]
-
+#langs=[('French', 'fr'),('Spanish', 'es'),('Portuguese', 'pt')]
+langs=[('Spanish', 'es')]
 arch_dir_path_des=root_arch_t+'/'+arc_client.get_arch_version_string(most_recent_version_str)+'/' #directory where the translations will be saved.
-##arch_dir_path_des='F:/UAD/CONTAGIO/WP2/task2.2/ARC-Translations_bu2025/'+most_recent_version_str+'/'##Solo para pruebas
+init_dir(arch_dir_path_des)
+
+
 #for ARC file
 arch_file_path_src=arch_dir_path_des+'English/ARCH.csv'
+init_dir(arch_file_path_src+'English/')
+
 ##arch_file_path_src=arch_dir_path_des+'/English/ARCH.csv'##Solo para pruebas
 arch_col_translate=['Form', 'Section', 'Question', 'Answer Options', 'Definition', 'Completion Guideline']
+
+
 
 #for paper details file
 paper_file_path_src=arch_dir_path_des+'English/paper_like_details.csv'
 ##paper_file_path_src=arch_dir_path_des+'/English/paper_like_details.csv'##Solo para pruebas
 paper_col_translate=['Paper-like section','Text']
 
+
+
 #for lists
 lists_file_path_src=arch_dir_path_des+'English/Lists/'
-##lists_file_path_src=arch_dir_path_des+'/English/Lists/'##Solo para pruebas
-lists = sorted([
+init_dir(lists_file_path_src)
+
+lists = sorted([    
     folder for folder in os.listdir(lists_file_path_src)
     if os.path.isdir(os.path.join(lists_file_path_src, folder)) and not folder.startswith('.')
 ])
+
+
+'''
+
+Adding this. Need to save it as english arch.csv
+
+'''
+print("commit_sha")
+commit_sha = ArcApiClient().get_arc_version_sha(most_recent_version_str)
+print("df_datadicc")
+df_datadicc = ArcApiClient().get_dataframe_arc_sha(commit_sha, most_recent_version_str)
+
+raw_path = os.path.join(arch_file_path_src+'English/', 'ARCH_raw.csv')
+df_datadicc.to_csv(raw_path, index=False)
+
+#get_arc = arc_client.get_dataframe_arc_sha(sha, version)(most_recent_version_str)
+
+print(df_datadicc)
+print("***")
+
+
+
+
 
 #Translation execution
 for lang in langs:
@@ -102,13 +146,14 @@ for lang in langs:
         print("LIST: "+li+" Translations found in previous: "+str(total[0])+" out of "+str(total[1]))
         ttt=ttt+total[0]
         ttl=ttl+total[1]
+
     print(f"TOTAL LISTS: # variables found translated: "+str(ttt)+" out of total variables in lists: "+str(ttl))
     #ux=input("Quiere continuar con la siguiente?")##solo para pruebas
-    #paper_t=[1,1] # type: ignore
-    paper_t=papertranslation.translate_paper(paper_file_path_src, paper_col_translate, arch_dir_path_des, lang, None, None)
+    
+    # If this doesn't work, we can just comment it out for now
+    paper_t=PaperTranslation.translate_paper(paper_file_path_src, paper_col_translate, arch_dir_path_des, lang, None, None)
     print(f"PAPER_LIKE: Total vars found in previous translations vs total: {paper_t[0]}/{paper_t[1]}")
     #ux=input("Quiere continuar con la siguiente?")##solo para pruebas    
-    #arch_t=[1,1] # type: ignore
-    arch_t=archtranslation_lastversion.translate_arch(arch_file_path_src, arch_col_translate, arch_dir_path_des, lang, arc_translated_file, arch_dir_path_prev)    
+    arch_t=ArchTranslation.translate_arch(arch_file_path_src, arch_col_translate, arch_dir_path_des, lang, arc_translated_file, arch_dir_path_prev)    
     print(f"ARCH: Total vars found in previous translations vs total: {arch_t[0]}/{arch_t[1]}")
     print("--------")

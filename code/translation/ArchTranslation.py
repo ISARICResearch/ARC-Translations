@@ -20,7 +20,9 @@ def translate_arch(file_path, columns_df, arch_dir_path_des, lang, prev_translat
 
     """
     filename = os.path.basename(file_path)
+    print("translate_arch filename: " + filename)
     arch_dir_path_des_file = os.path.join(arch_dir_path_des, lang[0]) + os.sep + filename
+    print("arch_dir_path_des_file: " + arch_dir_path_des_file)
     total_vars = 0
     total_vars_found_prev = 0
     if os.path.exists(arch_dir_path_des_file):
@@ -87,25 +89,44 @@ def translate_arch(file_path, columns_df, arch_dir_path_des, lang, prev_translat
     else:
         print("No previous translation directory found at "+str(arch_dir_path_prev)+".")
 
-    #print(f"prev english: {prev_map_eng['demog_birthknow']}")
-    #print(f"prev spanish: {prev_map['demog_birthknow']}")
-    #print(f"prev section: {prev_section}")   
-    
+    print(f"prev english: {prev_map_eng['demog_birthknow']}")
+    print(f"prev spanish: {prev_map['demog_birthknow']}")
+    print(f"prev section: {prev_section}")   
+
+    translation_cache = {}
+
+    items_total = 0
+    items_changed = 0
+    items_new = 0
+    #items_cached = 0
+    items_reused = 0
+    #items_failed = 0
+
     # Helper: translation function with safe fallback
     def do_translate(text):
+        #global items_failed
+        #global items_cached
         s = str(text)
         if pd.isna(text) or text is None:
             return ''
         if not s or len(s) >= 5000:
             return s
+        if s in translation_cache:
+            #items_cached += 1
+            return translation_cache[s]
         try:
-            return GoogleTranslator(source='en', target=lang[1]).translate(text=s)
+            result = GoogleTranslator(source='en', target=lang[1]).translate(text=s)
+            translation_cache[s] = result
+            return result
             #return "Enviada para traducir"
         except Exception:
             try:
                 # Second attempt: Pons Translator (if Google fails)
-                return PonsTranslator(source='en', target=lang[1]).translate(text=s)
+                result =  PonsTranslator(source='en', target=lang[1]).translate(text=s)
+                translation_cache[s] = result
+                return result
             except Exception:
+                #items_failed += 1
                 # failed translator -> return original text
                 return s
 
@@ -113,6 +134,9 @@ def translate_arch(file_path, columns_df, arch_dir_path_des, lang, prev_translat
     total_vars = len(df)
     calls_translator = 0
     cols_translated = 0
+
+
+
     for idx, row in df_final.iterrows():
         #ux=input("Quiere continuar con la siguiente?")##solo para pruebas
         var = str(row.get('Variable', '')).strip()
@@ -142,6 +166,7 @@ def translate_arch(file_path, columns_df, arch_dir_path_des, lang, prev_translat
             elif col == 'Section' and prev_section.get(original_text) is not None:
                 translated = prev_section.get(original_text)
             else: # for the columns that are not 'Form' or 'Section':
+                items_total += 1
                 # Check if text has changed compared to previous English version
                 text_changed = (
                     prev_row_eng is None or #Si toda la fila es none indica que es una nueva variable
@@ -152,14 +177,17 @@ def translate_arch(file_path, columns_df, arch_dir_path_des, lang, prev_translat
                 # Reuse previous translation if available and text hasn't changed
                 path_t=False
                 if text_changed: #If text has changed, we need to translate it again, even if there is a previous translation
+                    items_changed +=1
                     translated = do_translate(original_text)
                     calls_translator += 1
                     path_t=True
                 elif prev_row is None or prev_row.get(col) is None: #only if the previous translation is None, we need to translate it again, even if the text has not changed
+                    items_new +=1
                     translated = do_translate(original_text)
                     calls_translator += 1
                     path_t=True
                 else:#If the text has not changed and there is a previous translation, we can reuse it
+                    items_reused += 1
                     translated = prev_row.get(col)
                     path_t=False
                 
@@ -171,7 +199,7 @@ def translate_arch(file_path, columns_df, arch_dir_path_des, lang, prev_translat
         bar = '#' * filled + '.' * (100 - filled)
         sys.stdout.write(f"\rProgress: [{bar}] {idx*100/total_vars:.0f}%")
         sys.stdout.flush()
-        time.sleep(0.5)
+        time.sleep(0) # was 0.5, set to 0 for my own sanity
 
     df_final.to_csv(os.path.join(arch_dir_path_des_dir, filename), index=False)
     print("**********")
@@ -180,4 +208,13 @@ def translate_arch(file_path, columns_df, arch_dir_path_des, lang, prev_translat
     print(f"Total vars found in previous translations vs total translated variables: {total_vars_found_prev}/{total_vars}")
     print(f"ARCH Translation complete. Output saved to {arch_dir_path_des_dir}/{filename}")
     print("**********")
+
+    print ("items_total", items_total)
+    print ("items_new", items_new)
+    print ("items_changed", items_changed)
+    #print ("items_cached", items_cached)
+    print ("items_reused", items_reused)
+    #print ("items_failed", items_failed)
+    print(str(translation_cache))
+
     return (total_vars_found_prev, total_vars)

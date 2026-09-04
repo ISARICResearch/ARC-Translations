@@ -3,7 +3,7 @@ import sys
 from numpy import var
 import pandas as pd
 from deep_translator import  (GoogleTranslator, PonsTranslator, ChatGptTranslator)
-from pandas import col
+#from pandas import col
 
 def translate_lists(dir_path, list_item, output_dir_path, lang, lists_translated_dir):
     """

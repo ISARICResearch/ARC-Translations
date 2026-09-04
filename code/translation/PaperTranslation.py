@@ -25,7 +25,8 @@ def translate_paper(file_path, columns_df, arch_dir_path_des, lang, prev_transla
         print("File already created: "+filename)
         return (0, 0) #skip translation for this file
     
-    df = pd.read_csv(file_path, sep=',')
+    df = pd.read_csv(file_path, sep=',') ### FAILING HERE
+
     # Prepare output df: for ARCH.csv behavior was to overwrite the original columns with translations.
     df_final = df.copy()
     # prepare destination folder for this language
