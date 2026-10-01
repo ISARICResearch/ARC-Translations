@@ -1,14 +1,14 @@
 Paper-like section,Text,Paper-like section_translation,Text_translation
 Title,ISARIC CORE CRF,Título,CRF NÚCLEO ISARICO
 DESIGN OF THIS CASE REPORT FORM (CRF),This CRF is set up in modules to be used for recording data on [PROJECT_NAME].  A template for completion instructions is below. This should be tailored to the objectives of your data collection.,DISEÑO DE ESTE FORMULARIO DE INFORME DE CASO (CRF),Este CRF está configurado en módulos que se utilizarán para registrar datos en [PROJECT_NAME].  A continuación se incluye una plantilla con instrucciones para completarlo. Esto debe adaptarse a los objetivos de su recopilación de datos.
-PRESENTATION FORM, ALWAYS complete on the first day of presentation/admission/assessment. ,FORMULARIO DE PRESENTACIÓN,SIEMPRE completar el primer día de presentación/admisión/evaluación.
+PRESENTATION FORM," ALWAYS complete on the first day of presentation/admission/assessment. ",FORMULARIO DE PRESENTACIÓN,SIEMPRE completar el primer día de presentación/admisión/evaluación.
 PRESENTATION FORM,Timing /Events: Hospital admission / initial assessment,FORMULARIO DE PRESENTACIÓN,Horarios/Eventos: Ingreso hospitalario/evaluación inicial
-DAILY FORM, ALWAYS complete on the first day of presentation/admission/assessment,FORMA DIARIA,SIEMPRE completar el primer día de presentación/admisión/evaluación
+DAILY FORM," ALWAYS complete on the first day of presentation/admission/assessment",FORMA DIARIA,SIEMPRE completar el primer día de presentación/admisión/evaluación
 DAILY FORM," IF APPLICABLE, complete on the day of admission to ICU/high dependency unit/critical care (if different date to the date of first presentation/admission)",FORMA DIARIA,"SI CORRESPONDE, completar el día de ingreso a UCI/unidad de alta dependencia/cuidados críticos (si es fecha diferente a la fecha de primera presentación/ingreso)"
-DAILY FORM, OPTION to complete on days that research specific samples are taken,FORMA DIARIA,OPCIÓN para completar los días en que se toman muestras específicas de la investigación
-DAILY FORM, OPTION to complete daily if of interest for specific analysis. ,FORMA DIARIA,OPCIÓN para completar diariamente si es de interés para análisis específicos.
+DAILY FORM," OPTION to complete on days that research specific samples are taken",FORMA DIARIA,OPCIÓN para completar los días en que se toman muestras específicas de la investigación
+DAILY FORM," OPTION to complete daily if of interest for specific analysis. ",FORMA DIARIA,OPCIÓN para completar diariamente si es de interés para análisis específicos.
 DAILY FORM,Timing /Events: Hospital admission / initial assessment | Admission to ICU (if applicable) | Research sample taken (optional) | As per site protocol (optional),FORMA DIARIA,Horarios/Eventos: Ingreso hospitalario/evaluación inicial | Ingreso a UCI (si corresponde) | Muestra de investigación tomada (opcional) | Según protocolo del sitio (opcional)
-OUTCOME FORM, ALWAYS complete at discharge or death or at the end of the study period,FORMULARIO DE RESULTADOS,SIEMPRE completar al momento del alta o muerte o al final del período de estudio
+OUTCOME FORM," ALWAYS complete at discharge or death or at the end of the study period",FORMULARIO DE RESULTADOS,SIEMPRE completar al momento del alta o muerte o al final del período de estudio
 OUTCOME FORM,Timing /Events: Discharge / death / end of study,FORMULARIO DE RESULTADOS,Momento/Eventos: Alta/muerte/fin del estudio
 FOLLOW-UP FORM,Timing /Events: As per site protocol (optional),FORMULARIO DE SEGUIMIENTO,Horarios/Eventos: Según el protocolo del sitio (opcional)
 WITHDRAWAL FORM,Timing /Events: As per site protocol (optional),FORMULARIO DE RETIRO,Horarios/Eventos: Según el protocolo del sitio (opcional)

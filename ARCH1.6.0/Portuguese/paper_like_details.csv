@@ -1,14 +1,14 @@
 Paper-like section,Text,Paper-like section_translation,Text_translation
 Title,ISARIC CORE CRF,Título,ISARIC NÚCLEO CRF
 DESIGN OF THIS CASE REPORT FORM (CRF),This CRF is set up in modules to be used for recording data on [PROJECT_NAME].  A template for completion instructions is below. This should be tailored to the objectives of your data collection.,DESENHO DESTE FORMULÁRIO DE RELATO DE CASO (CRF),Este CRF está configurado em módulos a serem usados ​​para registrar dados em [PROJECT_NAME].  Um modelo para instruções de conclusão está abaixo. Isto deve ser adaptado aos objetivos da sua coleta de dados.
-PRESENTATION FORM, ALWAYS complete on the first day of presentation/admission/assessment. ,FORMULÁRIO DE APRESENTAÇÃO,SEMPRE preenchido no primeiro dia de apresentação/admissão/avaliação.
+PRESENTATION FORM," ALWAYS complete on the first day of presentation/admission/assessment. ",FORMULÁRIO DE APRESENTAÇÃO,SEMPRE preenchido no primeiro dia de apresentação/admissão/avaliação.
 PRESENTATION FORM,Timing /Events: Hospital admission / initial assessment,FORMULÁRIO DE APRESENTAÇÃO,Momento/Eventos: Admissão hospitalar/avaliação inicial
-DAILY FORM, ALWAYS complete on the first day of presentation/admission/assessment,FORMULÁRIO DIÁRIO,SEMPRE preenchido no primeiro dia de apresentação/admissão/avaliação
+DAILY FORM," ALWAYS complete on the first day of presentation/admission/assessment",FORMULÁRIO DIÁRIO,SEMPRE preenchido no primeiro dia de apresentação/admissão/avaliação
 DAILY FORM," IF APPLICABLE, complete on the day of admission to ICU/high dependency unit/critical care (if different date to the date of first presentation/admission)",FORMULÁRIO DIÁRIO,"SE APLICÁVEL, preencher no dia da admissão na UTI/unidade de alta dependência/cuidados intensivos (se data diferente da data da primeira apresentação/admissão)"
-DAILY FORM, OPTION to complete on days that research specific samples are taken,FORMULÁRIO DIÁRIO,OPÇÃO para preencher nos dias em que amostras específicas da pesquisa são coletadas
-DAILY FORM, OPTION to complete daily if of interest for specific analysis. ,FORMULÁRIO DIÁRIO,OPÇÃO de preenchimento diário caso seja de interesse para análise específica.
+DAILY FORM," OPTION to complete on days that research specific samples are taken",FORMULÁRIO DIÁRIO,OPÇÃO para preencher nos dias em que amostras específicas da pesquisa são coletadas
+DAILY FORM," OPTION to complete daily if of interest for specific analysis. ",FORMULÁRIO DIÁRIO,OPÇÃO de preenchimento diário caso seja de interesse para análise específica.
 DAILY FORM,Timing /Events: Hospital admission / initial assessment | Admission to ICU (if applicable) | Research sample taken (optional) | As per site protocol (optional),FORMULÁRIO DIÁRIO,Momento/Eventos: Admissão hospitalar/avaliação inicial | Admissão em UTI (se aplicável) | Amostra de investigação colhida (opcional) | De acordo com o protocolo do site (opcional)
-OUTCOME FORM, ALWAYS complete at discharge or death or at the end of the study period,FORMULÁRIO DE RESULTADO,SEMPRE preencher na alta ou no óbito ou no final do período de estudo
+OUTCOME FORM," ALWAYS complete at discharge or death or at the end of the study period",FORMULÁRIO DE RESULTADO,SEMPRE preencher na alta ou no óbito ou no final do período de estudo
 OUTCOME FORM,Timing /Events: Discharge / death / end of study,FORMULÁRIO DE RESULTADO,Momento/Eventos: Alta/óbito/fim do estudo
 FOLLOW-UP FORM,Timing /Events: As per site protocol (optional),FORMULÁRIO DE ACOMPANHAMENTO,Tempo/Eventos: De acordo com o protocolo do site (opcional)
 WITHDRAWAL FORM,Timing /Events: As per site protocol (optional),FORMULÁRIO DE RETIRADA,Tempo/Eventos: De acordo com o protocolo do site (opcional)

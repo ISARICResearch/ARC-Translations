@@ -1,14 +1,14 @@
 Paper-like section,Text,Paper-like section_translation,Text_translation
 Title,ISARIC CORE CRF,Titre,CRF DE BASE ISARIC
 DESIGN OF THIS CASE REPORT FORM (CRF),This CRF is set up in modules to be used for recording data on [PROJECT_NAME].  A template for completion instructions is below. This should be tailored to the objectives of your data collection.,CONCEPTION DE CE FORMULAIRE DE RAPPORT DE CAS (CRF),Ce CRF est configuré en modules à utiliser pour enregistrer des données sur [PROJECT_NAME].  Un modèle pour les instructions de réalisation est ci-dessous. Cela doit être adapté aux objectifs de votre collecte de données.
-PRESENTATION FORM, ALWAYS complete on the first day of presentation/admission/assessment. ,FORMULAIRE DE PRÉSENTATION,TOUJOURS compléter le premier jour de présentation/admission/évaluation.
+PRESENTATION FORM," ALWAYS complete on the first day of presentation/admission/assessment. ",FORMULAIRE DE PRÉSENTATION,TOUJOURS compléter le premier jour de présentation/admission/évaluation.
 PRESENTATION FORM,Timing /Events: Hospital admission / initial assessment,FORMULAIRE DE PRÉSENTATION,Calendrier/Événements : Admission à l’hôpital / évaluation initiale
-DAILY FORM, ALWAYS complete on the first day of presentation/admission/assessment,FORME QUOTIDIENNE,TOUJOURS compléter le premier jour de présentation/admission/évaluation
+DAILY FORM," ALWAYS complete on the first day of presentation/admission/assessment",FORME QUOTIDIENNE,TOUJOURS compléter le premier jour de présentation/admission/évaluation
 DAILY FORM," IF APPLICABLE, complete on the day of admission to ICU/high dependency unit/critical care (if different date to the date of first presentation/admission)",FORME QUOTIDIENNE,"SI APPLICABLE, à compléter le jour de l'admission en USI/unité pour dépendances élevées/soins intensifs (si date différente de la date de première présentation/admission)"
-DAILY FORM, OPTION to complete on days that research specific samples are taken,FORME QUOTIDIENNE,OPTION à compléter les jours où des échantillons spécifiques à la recherche sont prélevés
-DAILY FORM, OPTION to complete daily if of interest for specific analysis. ,FORME QUOTIDIENNE,OPTION à compléter quotidiennement si cela présente un intérêt pour une analyse spécifique.
+DAILY FORM," OPTION to complete on days that research specific samples are taken",FORME QUOTIDIENNE,OPTION à compléter les jours où des échantillons spécifiques à la recherche sont prélevés
+DAILY FORM," OPTION to complete daily if of interest for specific analysis. ",FORME QUOTIDIENNE,OPTION à compléter quotidiennement si cela présente un intérêt pour une analyse spécifique.
 DAILY FORM,Timing /Events: Hospital admission / initial assessment | Admission to ICU (if applicable) | Research sample taken (optional) | As per site protocol (optional),FORME QUOTIDIENNE,Calendrier/Événements : Admission à l'hôpital / évaluation initiale | Admission aux soins intensifs (le cas échéant) | Échantillon de recherche prélevé (facultatif) | Selon le protocole du site (facultatif)
-OUTCOME FORM, ALWAYS complete at discharge or death or at the end of the study period,FORMULAIRE DE RÉSULTAT,TOUJOURS compléter à la sortie ou au décès ou à la fin de la période d’études
+OUTCOME FORM," ALWAYS complete at discharge or death or at the end of the study period",FORMULAIRE DE RÉSULTAT,TOUJOURS compléter à la sortie ou au décès ou à la fin de la période d’études
 OUTCOME FORM,Timing /Events: Discharge / death / end of study,FORMULAIRE DE RÉSULTAT,Moment/Événements : Sortie/décès/fin des études
 FOLLOW-UP FORM,Timing /Events: As per site protocol (optional),FORMULAIRE DE SUIVI,Calendrier/événements : selon le protocole du site (facultatif)
 WITHDRAWAL FORM,Timing /Events: As per site protocol (optional),FORMULAIRE DE RETRAIT,Calendrier/événements : selon le protocole du site (facultatif)
