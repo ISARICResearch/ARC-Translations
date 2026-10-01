@@ -1,0 +1,22 @@
+Drugs,Code,Library,Selected,preset_ARChetype Disease CRF_H5Nx,preset_ARChetype Disease CRF_Mpox Pregnancy and Paediatric,preset_ARChetype Syndromic CRF_ARI,preset_ARChetype Disease CRF_Dengue,preset_ARChetype Disease CRF_Chikungunya,preset_ARChetype Syndromic CRF_VHF,preset_ARChetype Syndromic CRF_Encephalitis,Value,Translation Reviewers
+Analgésique,373265006 |Analgesic (substance)|,SNOMED,1.0,,1.0,,,1.0,1.0,1.0,1,0
+Antibiotique,255631004 |Antibiotic (product)|,SNOMED,1.0,1.0,,1.0,1.0,,1.0,1.0,2,0
+Anticoagulant,372862008 |Anticoagulant (substance)|,SNOMED,,1.0,,1.0,,1.0,,,3,0
+Antifongique,373219008 |Substance with antifungal mechanism of action (substance)|,SNOMED,1.0,1.0,,1.0,,,,1.0,4,0
+Antihistamine,6425004 |Product containing histamine receptor antagonist (product)|,SNOMED,,,,,,,,,5,0
+Antiprotozoaire,788027008 |Medicinal product acting as antiprotozoal agent (product)|,SNOMED,,,,,,,,,6,0
+Antiprurigineux,312067003 |Local antipruritic agent (product)|,SNOMED,1.0,,,,,,,,7,0
+Antiviral,372701006,SNOMED,1.0,1.0,1.0,1.0,,,1.0,1.0,8,0
+Plasma de convalescence,1179779000,SNOMED,,,,,,,,,9,0
+Corticostéroïde,116566001,SNOMED,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,10,0
+Diurétiques,372695000,SNOMED,,,,,,,,,11,0
+Immunomodulateur,372558009,SNOMED,,,1.0,,,,,,12,0
+Médicaments immunosuppresseurs (non stéroïdiens),69431002,SNOMED,,,1.0,,,,,,13,0
+Inotropes / vasopresseur,373213009 |Inotropic agent (substance)|870406003 |Vasopressor (substance)|,SNOMED,,1.0,,1.0,,,1.0,1.0,14,0
+Immunoglobuline intraveineuse,698802001,SNOMED,,,1.0,,,,,,15,0
+Antibiotique topique,255631004 |Antibiotic (product)| 6064005 |Topical route (qualifier value)|,SNOMED,1.0,,,,,,1.0,,16,0
+Anesthésique local,,,,,,,,1.0,,,17,0
+Antidépresseurs et anxiolytiques,,,,,,,,1.0,,,18,0
+Antiépileptiques,,,,,,,,1.0,,,19,0
+Antifibrinolytique,,,,,,,,,1.0,,20,0
+Antipaludique,,,,,,,,,1.0,,21,0

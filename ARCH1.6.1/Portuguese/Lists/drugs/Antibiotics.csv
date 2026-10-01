@@ -1,0 +1,129 @@
+Drugs,Code,Library,Selected,preset_ARChetype Disease CRF_Covid,preset_ARChetype Disease CRF_Dengue,preset_ARChetype Disease CRF_Mpox,preset_ARChetype Disease CRF_Mpox Pregnancy and Paediatric,preset_ARChetype Disease CRF_H5Nx,preset_ARChetype Syndromic CRF_ARI,preset_ARChetype Syndromic CRF_Arbovirus,preset_ARChetype Syndromic CRF_VHF,preset_ARChetype Syndromic CRF_Encephalitis,Comment,Value,Translation Reviewers
+"Amicacina (Amikin, Biodacina, Miacina)",J01GB06,ATC,1.0,,,,,,,,,,,1,0
+"Amoxicilina (Amoxil, Moxatag, Trimox)",J01CA04,ATC,1.0,1.0,,,,,1.0,,,,,2,0
+"Inibidor de Amoxicilina/Beta-lactamase (Amoxicilina/Clavulanato, Amoxicilina e ácido clavulânico, Augmentin, Amoxiclav, Co-amoxiclav)",J01CR02,ATC,1.0,1.0,,,,,1.0,,,,,3,0
+"Anfotericina (Anfotericina B, Anfocina, Fungizone, Fungilina)",J02AA01,ATC,,,,,,,,,,,,4,0
+Ampicilina (Polyflex),J01CA01,ATC,1.0,,,,,,,,,1.0,,5,0
+"Inibidor de Ampicilina/Beta-lactamase (Ampicilina/Sulbactam, Sulacilina, Unasyn)",J01CR01,ATC,1.0,,,,,,,,,,,6,0
+"Atovaquona (Mepron, Wellvone)",P01AX06,ATC,,,,,,,,,,,,7,0
+"Azitromicina (Sumamed, Zithromax, Zmax)",J01FA10,ATC,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,,,8,0
+"Aztreonam (Azactam, Cayston, Primbactam)",J01DF01,ATC,,,,,,,,,,,,9,0
+"Bacampicilina (Penglobe, Spectrobid)",J01CA06,ATC,,,,,,,,,,,,10,0
+Bacitracina (Baciguente),J01XX10,ATC,,,,,,,,,,,,11,0
+Fenoximetilpenicilina benzatina (penicilina V),J01CE10,ATC,,,,,,,,,,,,12,0
+"Benzilpenicilina (Penicilina G, Bactracilina G,)",J01CE01,ATC,1.0,,,,,,,,,,,13,0
+Capreomicina (Capastat),J04AB30,ATC,,,,,,,,,,,,14,0
+"Carbenicilina indanil sódica (Anabactyl, Carbapen, Carindacillin, Pyopen)",J01CA05,ATC,,,,,,,,,,,,15,0
+Caspofungina (Cancidas),J02AX04,ATC,,,,,,,,,,,,16,0
+"Cefaclor (Biocef, Ceclor, Raniclor)",J01DC04,ATC,,,,,,,,,,,,17,0
+Cefadroxil (Duricef),J01DB05,ATC,,,,,,,,,,,,18,0
+"Cefalexina (Cefalexina, Keflex, Daxbia)",J01DB01,ATC,1.0,,,,,,,,,,,19,0
+Cefamandol (Mandol),J01DC03,ATC,,,,,,,,,,,,20,0
+"Cefazolina (Ancef, Kefzol)",J01DB04,ATC,1.0,,,,,,,,,,,21,0
+"Cefdinir (Cefzon, Omnicef)",J01DD15,ATC,,,,,,,,,,,,22,0
+Cefditoreno (Spectracef),J01DD16,ATC,,,,,,,,,,,,23,0
+Cefepima (Maxipima),J01DE01,ATC,1.0,,,,,,,,,1.0,,24,0
+Cefixima (Suprax),J01DD08,ATC,,,,,,,,,,,,25,0
+Cefmetazol (Zefazona),J01DC09,ATC,,,,,,,,,,,,26,0
+Cefoperazona (Cefobid),J01DD12,ATC,,,,,,,,,,,,27,0
+Cefotaxima (Claforan),J01DD01,ATC,1.0,,,,,,,,,1.0,,28,0
+Cefotetano (Cefotan),J01DC05,ATC,,,,,,,,,,,,29,0
+"Cefoxitina (Mefoxina, Renoxitina)",J01DC01,ATC,,,,,,,,,,,,30,0
+Cefpodoxima Proxetil (Vantin),J01DD13,ATC,,,,,,,,,,,,31,0
+"Cefprozil (Cefproxil, Cefproz, Cefzil)",J01DC10,ATC,,,,,,,,,,,,32,0
+"Ceftarolina Fosamil (Teflaro, Zinforo)",J01DI02,ATC,1.0,,,,,,,,,,,33,0
+"Ceftazidima (Fortaz, Tazicef)",J01DD02,ATC,1.0,,,,,,,,,1.0,,34,0
+"Inibidor de ceftazidima/beta-lactamase (ceftazidima/avibactam, Avycaz, Zavicefta)",J01DD52,ATC,,,,,,,,,,,,35,0
+Ceftibuteno (Cedax),J01DD14,ATC,,,,,,,,,,,,36,0
+Ceftizoxima (Cefizox),J01DD07,ATC,,,,,,,,,,,,37,0
+Ceftobiprol Medocaril (Zeftera),J01DI01,ATC,1.0,,,,,,,,,,,38,0
+"Ceftriaxona (Rocephin, Wintriaxone)",J01DD04,ATC,1.0,1.0,1.0,,,1.0,1.0,1.0,1.0,1.0,,39,0
+"Cefuroxima (Ceftina, Zinacef)",J01DC02,ATC,1.0,,,,,,,,,,,40,0
+"Cefalexina (Cefalexina, Keflex, Daxbia)",J01DB01,ATC,,,,,,,,,,,,41,0
+"Cefalotina (Cefalotina,",J01DB03,ATC,,,,,,,,,,,,42,0
+"Cefapirina (cefapirina,",J01DB08,ATC,,,,,,,,,,,,43,0
+"Cefradina (Cefradina, Velosef)",J01DB09,ATC,,,,,,,,,,,,44,0
+"Cloranfenicol (Cloromicetina, Viceton)",J01BA01,ATC,,,,,,,,,,,,45,0
+Cinoxacina (Cinobac),J01MB06,ATC,,,,,,,,,,,,46,0
+"Ciprofloxacina (Cetraxal, Cipro, Ciloxan, Proquin)",J01MA02,ATC,1.0,,,,,,,,,,,47,0
+"Claritromicina (Biaxin, Klacid)",J01FA09,ATC,1.0,,,,,,,,,,,48,0
+"Clindamicina (Cleocin, Dalacin)",J01FF01,ATC,1.0,,,,,,,,,,,49,0
+"Cloxacilina (Tegopen, Cloxapen)",J01CF02,ATC,,,,,,,,,,,,50,0
+"Colistina (Colistimetato, Coly Mycin M, Colobreathe, Xilistina)",J01XB01,ATC,,,,,,,,,,,,51,0
+Cicloserina (seromicina),J04AB01,ATC,,,,,,,,,,,,52,0
+"Daptomicina (Dapzura, Cubicin)",J01XX09,ATC,,,,,,,,,,,,53,0
+Demeclociclina (Declomicina),J01AA01,ATC,,,,,,,,,,,,54,0
+"Dicloxacilina (Diclocil, Dycill, Dynapen)",J01CF01,ATC,,,,,,,,,,,,55,0
+Diritromicina (Dynabac),J01FA13,ATC,,,,,,,,,,,,56,0
+"Doripenem (Doribax, Finibax)",J01DH04,ATC,,,,,,,,,,,,57,0
+"Doxiciclina (Vibramicina, Oracea, Monodox)",J01AA02,ATC,1.0,1.0,,1.0,1.0,,,,,,,58,0
+Enoxacina,J01MA04,ATC,,,,,,,,,,,,59,0
+Ertapenem (Invanz),J01DH03,ATC,1.0,,,,,,,,,,,60,0
+"Eritromicina (Eryc, Eritrocina)",J01FA01,ATC,1.0,,,,,,,,,,,61,0
+Etambutol,J04AK02,ATC,,,,,,,,,,,,62,0
+"Flucloxacilina (Floxapen, Fluclox)",J01CF05,ATC,1.0,,,,,,,,,,,63,0
+Fluconazol (Diflucan),J02AC01,ATC,1.0,,,,,,,,,,,64,0
+Fosfomicina (Monurol),J01XX01,ATC,1.0,,,,,,,,,,,65,0
+Ácido fusídico,J01XC01,ATC,,,,,,,,,,,,66,0
+Gatifloxacina (Tequin),J01MA16,ATC,,,,,,,,,,,,67,0
+Gemifloxacino (fativo),J01MA15,ATC,,,,,,,,,,,,68,0
+"Gentamicina (Garamicina, Gentak, Genóptico)",J01GB03,ATC,1.0,,,,,,,,,,,69,0
+Grepafloxacina,J01MA11,ATC,,,,,,,,,,,,70,0
+Imipenem/Cilastatina (Primaxina),J01DH51,ATC,1.0,,,,,,,,,1.0,,71,0
+"Isoniazida (Nidrazida, Laniazida)",J04AC01,ATC,1.0,,,,,,,,,,,72,0
+Canamicina (Kantrex),J01GB04,ATC,,,,,,,,,,,,73,0
+"Levofloxacina (Levaquin, Levxin, Tavanic)",J01MA12,ATC,1.0,,,,,1.0,1.0,,,,,74,0
+"Lincomicina (Linobac, Lincomed)",J01FF02,ATC,,,,,,,,,,,,75,0
+Linezolida (Zyvox),J01XX08,ATC,1.0,,,,,,,,,,,76,0
+Lomefloxacina,J01MA07,ATC,,,,,,,,,,,,77,0
+"Meropenem (Merrem, Meronem)",J01DH02,ATC,1.0,,,,,,,,,1.0,,78,0
+"Hipurato de metenamina (Hiprex, Urex)",J01XX05,ATC,,,,,,,,,,,,79,0
+"Meticilina (meticilina, estacilina)",J01CF03,ATC,,,,,,,,,,,,80,0
+"Metronidazol (Flagyl, Likmez)",J01XD01,ATC,1.0,,,,,,,,,,,81,0
+"Mezlocilina (Baypen, Melocina, Bezlin, Optocilina)",J01CA10,ATC,,,,,,,,,,,,82,0
+"Minociclina (Minocin, Ximino)",J01AA08,ATC,,,,,,,,,,,,83,0
+"Moxifloxacina (Avelox, Vigamox)",J01MA14,ATC,1.0,,,,,,,,,,,84,0
+Nafcilina,J01CF06,ATC,,,,,,,,,,,,85,0
+"Ácido Nalidíxico (NegGram, Wintomylon)",J01MB02,ATC,,,,,,,,,,,,86,0
+Neomicina (Neovet),J01GB05,ATC,,,,,,,,,,,,87,0
+Netilmicina (Netromicina),J01GB07,ATC,,,,,,,,,,,,89,0
+"Nitrofural (Aldomicina, Furacina, NFZ)",D08AF01,ATC,,,,,,,,,,,,90,0
+"Nitrofurantoína (Macrobídeo, Macrodantina)",J01XE01,ATC,1.0,,,,,,,,,,,91,0
+"Norfloxacina (Trizolin, Noroxina)",J01MA06,ATC,,,,,,,,,,,,92,0
+Novobiocina (Albadry),90220005,SNOMED,,,,,,,,,,,,93,0
+"Ofloxacina (Floxin, Ocuflox)",J01MA01,ATC,,,,,,,,,,,,94,0
+Oxacilina (Bactocil),J01CF04,ATC,,,,,,,,,,,,95,0
+"Oxitetraciclina (Agrimicina, Noromicina)",J01AA06,ATC,,,,,,,,,,,,96,0
+Piperacilina,J01CA12,ATC,,,,,,,,,,,,97,0
+"Inibidor de piperacilina/beta-lactamase (Piperacilina/Tazobactam, Pip-Taz, Tazocel, Tazocin, Zosyn,",J01CR05,ATC,1.0,,,,,,,,,,,98,0
+Pivmecilinam (Selexida),J01CA08,ATC,1.0,,,,,,,,,,,100,0
+Plazomicina (Zemdri),J01GB14,ATC,,,,,,,,,,,,101,0
+"Polimixina B (Poly-Rx, Polisporina)",J01XB02,ATC,,,,,,,,,,,,102,0
+"Benzilpenicilina procaína (penicilina G, batracilina G, norocilina)",J01CE09,ATC,,,,,,,,,,,,103,0
+Pirazinamida,J04AK01,ATC,,,,,,,,,,,,104,0
+Quinupristina/Dalfopristina (Synercid),J01FG02,ATC,,,,,,,,,,,,105,0
+Retapamulina (Altabax),D06AX13,ATC,,,,,,,,,,,,106,0
+"Rifampicina (Rifadina, Rimactano)",J04AB02,ATC,1.0,,,,,,,,,,,107,0
+Rifapentina (Priftin),J04AB05,ATC,,,,,,,,,,,,108,0
+Rifaximina (Xifaxan),A07AA11,ATC,1.0,,,,,,,,,,,109,0
+"Roxitromicina (Biaxsig, Rulide)",J01FA06,ATC,,,,,,,,,,,,110,0
+Esparfloxacina (Spacin),J01MA09,ATC,,,,,,,,,,,,111,0
+Espectinomicina (SpectoGard),J01XX04,ATC,,,,,,,,,,,,112,0
+Estreptomicina,J01GA01,ATC,,,,,,,,,,,,113,0
+Sulfadiazina,J01EC02,ATC,,,,,,,,,,,,114,0
+Sulfametoxazol (Gantanol),J01EC01,ATC,1.0,,,,,,,,,,,115,0
+"Sulfametoxazol / Trimetoprima (Bactrim, Cotrimoxazol, Septra)",J01EE01,ATC,1.0,,,,,,,,,,,116,0
+"Sulfisoxazol (Sulfafurazol, Truxazol)",J01EB05,ATC,,,,,,,,,,,,117,0
+Teicoplanina (Targocid),J01XA02,ATC,,,,,,,,,,,,118,0
+"Telavancina (Televancina, Vibativ)",J01XA03,ATC,,,,,,,,,,,,119,0
+Telitromicina (Levviax),J01FA15,ATC,,,,,,,,,,,,120,0
+"Tetraciclina (Viabeclina, Vitastem)",J01AA07,ATC,,,,,,,,,,,,121,0
+Ticarcilina,J01CA13,ATC,,,,,,,,,,,,122,0
+Inibidor de ticarcilina/beta-lactamase (Ticacilina/clavulanato),J01CR03,ATC,,,,,,,,,,,,123,0
+Tigeciclina (Tygacil),J01AA12,ATC,1.0,,,,,,,,,,,124,0
+"Tobramicina (Nebcin, Tobrex, Tobi)",J01GB01,ATC,1.0,,,,,,,,,,,125,0
+Trimetoprima (Primsol),J01EA01,ATC,1.0,,,,,,,,,,,126,0
+Trovafloxacina (Trovan),J01MA13,ATC,,,,,,,,,,,,127,0
+"Vancomicina (Vancocina, Vancocina HCl, Firvanq)",J01XA01,ATC,1.0,,,,,,1.0,,,1.0,,128,0
+Voriconazol (Vfend),J02AC03,ATC,,,,,,,,,,,,129,0
+Xibornol,J01XX02,ATC,,,,,,,,,,,,130,0

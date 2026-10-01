@@ -1,0 +1,59 @@
+Condition,Code,Library,Selected,Charlson,Elixhauser,Value,Translation Reviewers
+Insuficiência renal aguda sobre crônica,236433006,SNOMED,1,1.0,1.0,1,0
+Asplênia,707147002,SNOMED,1,,1.0,2,0
+Fibrilação atrial,49436004,SNOMED,1,,1.0,3,0
+Doença Autoimune,85828009,SNOMED,1,,,4,0
+Distúrbio de coagulação sanguínea,64779008,SNOMED,1,,,5,0
+Cardiomiopatia,85898001,SNOMED,1,,1.0,6,0
+Doença cerebrovascular,62914000,SNOMED,1,1.0,1.0,7,0
+Doença hematológica crônica,398983000,SNOMED,1,,,8,0
+Infecção Crônica,177010002,SNOMED,1,,,9,0
+Doença Renal Crônica,709044004,SNOMED,1,1.0,1.0,10,0
+Hepatite Viral Crônica,10295004,SNOMED,1,,1.0,11,0
+Doença cardíaca crônica,128238001,SNOMED,1,,1.0,12,0
+Distúrbio inflamatório crônico,128294001,SNOMED,1,,,13,0
+Doença pulmonar crônica,413839001,SNOMED,1,,1.0,14,0
+Distúrbio metabólico crônico,128289001,SNOMED,1,,1.0,15,0
+Doença Cardíaca Congênita,13213009,SNOMED,1,,1.0,16,0
+Insuficiência Cardíaca Congestiva,42343007,SNOMED,1,1.0,1.0,17,0
+Demência,52448006,SNOMED,1,1.0,1.0,18,0
+Diabetes Mellitus (todos os tipos),73211009,SNOMED,1,1.0,1.0,19,0
+Doença do fígado,235856003,SNOMED,1,,1.0,20,0
+Distúrbio do metabolismo lipídico,267431006,SNOMED,1,,1.0,21,0
+Distúrbio da circulação pulmonar,39785005,SNOMED,1,,1.0,22,0
+Hipertensão essencial,59621000,SNOMED,1,,1.0,23,0
+Distúrbio da válvula cardíaca,368009,SNOMED,1,,1.0,24,0
+Hemiplegia,50582007,SNOMED,1,1.0,1.0,25,0
+Doença pelo vírus da imunodeficiência humana [HIV],19030005,SNOMED,1,1.0,1.0,26,0
+Hipertireoidismo,34486009,SNOMED,1,,1.0,27,0
+Hipotireoidismo,40930008,SNOMED,1,,1.0,28,0
+Imunossupressão,38013005,SNOMED,1,,1.0,29,0
+Doença cardíaca isquêmica,414545008,SNOMED,1,1.0,1.0,30,0
+Leucemia,93143009,SNOMED,1,1.0,1.0,31,0
+Linfoma maligno,118600007,SNOMED,1,1.0,1.0,32,0
+Tumor carcinoide metastático Câncer,705176003,SNOMED,1,1.0,1.0,33,0
+Doença hepática moderada ou grave,235856003 |Disorder of liver (disorder)|371924009 |Moderate to severe (qualifier value)|,SNOMED,1,1.0,1.0,34,0
+Doença Renal Moderada ou Grave,90708001 |Kidney disease (disorder)|371924009 |Moderate to severe (qualifier value)|,SNOMED,1,1.0,1.0,35,0
+Mieloma múltiplo,109989006,SNOMED,1,1.0,1.0,36,0
+Infarto do Miocárdio,22298006,SNOMED,1,1.0,1.0,37,0
+Doenças Neurodegenerativas,80690008,SNOMED,1,,1.0,38,0
+Distúrbio neurológico confirmado,407626008,SNOMED,1,,1.0,39,0
+Obesidade,414916001,SNOMED,1,,1.0,40,0
+Paraplegia,60389000,SNOMED,1,1.0,1.0,41,0
+Doença Vascular Periférica,400047006,SNOMED,1,1.0,1.0,42,0
+Neoplasia maligna primária,372087000,SNOMED,1,1.0,1.0,43,0
+Transtorno por uso de substâncias psicoativas,11061003,SNOMED,1,,1.0,44,0
+Doenças Raras e Erros Inatos do Metabolismo,4121882,SNOMED,1,,,45,0
+Psicoses reativas,231437006,SNOMED,1,,1.0,46,0
+Trombose venosa profunda recorrente,710167004,SNOMED,1,,1.0,47,0
+Distúrbios Reumatóides,396332003,SNOMED,1,1.0,1.0,48,0
+Fumar,77176002,SNOMED,1,,1.0,49,0
+Configuração de tumor sólido,369757002,SNOMED,1,1.0,1.0,50,0
+AVC,230690007,SNOMED,1,1.0,1.0,51,0
+Transplante presente,737294004,SNOMED,1,1.0,1.0,52,0
+Tuberculose,56717001,SNOMED,1,1.0,1.0,53,0
+Doença indiferenciada do tecido conjuntivo,239918008,SNOMED,1,,1.0,54,0
+Osteoartrite,396275006,SNOMED,1,,,55,0
+Artrite reumatoide,69896004,SNOMED,1,,,56,0
+Esclerose múltipla,24700007,SNOMED,1,,,57,0
+Doença de Alzheimer,26929004,SNOMED,1,,,58,0

@@ -1,0 +1,28 @@
+Drugs,Code,Library,Selected,preset_ARChetype Disease CRF_Dengue,preset_ARChetype Syndromic CRF_Arbovirus,preset_ARChetype Syndromic CRF_ARI,preset_ARChetype Syndromic CRF_VHF,preset_ARChetype Syndromic CRF_Encephalitis,Value,Translation Reviewers
+Abatacept (Orencia)," L04AA24"," ATC",,,,,,,1,0
+Adalimumab (Humira)," L04AB04"," ATC",1.0,,,,,1.0,2,0
+"Alemtuzumab (Campath, Lemtrada)"," L04AA34"," ATC",,1.0,1.0,,1.0,,3,0
+Anakinra,L04AC03,ATC,,,,,,1.0,4,0
+"Azathioprine (Imuran, Azasan)"," L04AX01"," ATC",1.0,1.0,1.0,1.0,1.0,1.0,5,0
+Basiliximab (Simulect)," L04AC02"," ATC",,,,,,,6,0
+Bélatacept (Nulojix)," L04AA28"," ATC",,,,,,1.0,7,0
+"Ciclosporine (Neoral, Sandimmune, Gengraf)"," L04AD01"," ATC",1.0,1.0,1.0,,1.0,1.0,8,0
+Étanercept (Enbrel)," L04AB01"," ATC",1.0,,,,,1.0,9,0
+"Évérolimus (Afinitor, Zortress)"," L04AA18"," ATC",,1.0,1.0,,,,10,0
+"Infliximab (Avsola, Inflectra, Remicade)"," L04AB02"," ATC",1.0,,,,,1.0,11,0
+Léflunomide (Arava)," L04AA13"," ATC",,,,,,1.0,12,0
+Mercaptopurine (Purixan),L01BB02,ATC,,,,,,1.0,13,0
+"Méthotrexate (Trexall, Rasuvo, Otrexup)",L04AX03,ATC,1.0,1.0,1.0,1.0,,1.0,14,0
+Mycophénolate mofétil (CellCept)," L04AA06"," ATC",1.0,1.0,1.0,,,1.0,15,0
+Acide mycophénolique (Myfortic)," L04AA06"," ATC",1.0,,,1.0,,1.0,16,0
+Natalizumab (Tysabri)," L04AA23"," ATC",,,,,,,17,0
+Nivolumab (Opdivo),L01FF02,ATC,,,,,,,18,0
+"Rituximab (Rituxan, MabThera)",L01FA01," ATC",1.0,1.0,1.0,1.0,,1.0,19,0
+Sarilumab (Kevzara)," L04AC14"," ATC",1.0,,,,,1.0,20,0
+Sécukinumab (Cosentyx)," L04AC10"," ATC",,,,,,,21,0
+Sirolimus (Rapamune)," L04AA10"," ATC",,1.0,1.0,,1.0,1.0,22,0
+"Tacrolimus (Prograf, Advagraf, Protopic)"," L04AD02"," ATC",1.0,1.0,1.0,,1.0,1.0,23,0
+Thalidomide (Thalomid),L04AX02,ATC,,,,,,,24,0
+Tocilizumab (Actemra)," L04AC07"," ATC",1.0,,,1.0,,1.0,25,0
+Ustekinumab (Stelara)," L04AC05"," ATC",,,,,,,26,0
+Védolizumab (Entyvio)," L04AA33"," ATC",,,,,,,27,0

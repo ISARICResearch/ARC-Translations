@@ -1,0 +1,36 @@
+Condition,Code,Library,Value,Selected,Translation Reviewers
+Syndrome de détresse respiratoire aiguë (SDRA),67782005,SNOMED,1,1,0
+Bactériémie,5758002,SNOMED,2,1,0
+Infarctus du myocarde,22298006,SNOMED,3,1,0
+Découverte neurologique,102957003,SNOMED,4,1,0
+Pneumonie,233604007,SNOMED,5,1,0
+Embolie pulmonaire,59282003,SNOMED,6,1,0
+Choc septique,76571007,SNOMED,7,1,0
+Trouble acquis de la coagulation,234466008,SNOMED,8,1,0
+Syndrome d'insuffisance rénale aiguë,14669001,SNOMED,9,1,0
+Saignement,131148009,SNOMED,10,1,0
+Arrêt cardiaque,410429000,SNOMED,11,1,0
+AVC cardioembolique,413758000,SNOMED,12,1,0
+Choc cardiogénique,89138009,SNOMED,13,1,0
+AVC cérébelleux,16371781000119100,SNOMED,14,1,0
+Décompensation,87228002,SNOMED,15,1,0
+Thrombose veineuse profonde,128053003,SNOMED,16,1,0
+Coagulation intravasculaire disséminée (CIVD),67406007,SNOMED,17,1,0
+Empyème,312682007,SNOMED,18,1,0
+Encéphalite,45170000,SNOMED,19,1,0
+AVC hémorragique,1078001000000100,SNOMED,20,1,0
+Pneumonie nosocomiale,425464007,SNOMED,21,1,0
+Encéphalopathie ischémique,389100007,SNOMED,22,1,0
+AVC ischémique,422504002,SNOMED,23,1,0
+Gros foie,80515008,SNOMED,24,1,0
+Méningite,7180009,SNOMED,25,1,0
+Syndrome inflammatoire multisystémique chez l'adulte,1119306006,SNOMED,26,1,0
+Syndrome inflammatoire multisystémique chez l'enfant,895448002,SNOMED,27,1,0
+Pneumothorax,36118008,SNOMED,28,1,0
+Saignements gastro-intestinaux récurrents,307296008,SNOMED,29,1,0
+Infection récurrente des voies urinaires,197927001,SNOMED,30,1,0
+État septique,91302008,SNOMED,31,1,0
+AVC thrombotique,371040005,SNOMED,32,1,0
+Ischémie cérébrale transitoire,266257000,SNOMED,33,1,0
+Hypotension transitoire,94501000000000,SNOMED,34,1,0
+Pneumonie sous ventilation assistée,429271009,SNOMED,35,1,0

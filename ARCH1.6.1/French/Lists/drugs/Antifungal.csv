@@ -1,0 +1,10 @@
+Drugs,Code,Library,Selected,Value,Translation Reviewers
+Amphotéricine B,714520003,http://snomed.info/sct,1.0,1,0
+Clotrimazole,5797005,http://snomed.info/sct,,2,0
+Éconazole,18952006,http://snomed.info/sct,,3,0
+Fluconazole,31865003,http://snomed.info/sct,1.0,4,0
+Kétoconazole,40232005,http://snomed.info/sct,,5,0
+Amphotéricine liposomale,773379008,http://snomed.info/sct,1.0,6,0
+Miconazole,42720001,http://snomed.info/sct,,7,0
+Nystatine,12096000,http://snomed.info/sct,,8,0
+Terbinafine,108925005,http://snomed.info/sct,,9,0

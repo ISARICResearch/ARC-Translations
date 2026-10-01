@@ -1,0 +1,13 @@
+Disease,Code,Library,Selected,preset_ARChetype Syndromic CRF_ARI,Value,Translation Reviewers
+Ouvrier d'abattoir,,,1.0,1.0,1,0
+Ouvrier dans une ferme de bovins de boucherie,,,1.0,1.0,2,0
+Ouvrier de ferme laitière,,,1.0,1.0,3,0
+Travailleur de la santé,,,1.0,1.0,4,0
+Ouvrier du marché aux oiseaux vivants,,,,1.0,5,0
+Autre ouvrier du marché d'animaux vivants,,,,1.0,6,0
+Ouvrier de ferme avicole,,,1.0,1.0,7,0
+Abatteur de volailles,,,,1.0,8,0
+Ouvrier des transports publics,,,,,9,0
+Ouvrier d'assainissement,,,,,10,0
+Ouvrier d'élevage porcin,,,,1.0,11,0
+Vétérinaire,,,1.0,1.0,12,0

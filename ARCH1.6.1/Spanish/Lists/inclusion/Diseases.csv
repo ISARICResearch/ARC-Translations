@@ -1,0 +1,53 @@
+Disease,Code,Library,Selected,preset_ARChetype Disease CRF_Covid,preset_ARChetype Disease CRF_Dengue,preset_ARChetype Disease CRF_Mpox,preset_ARChetype Disease CRF_Mpox Pregnancy and Paediatric,preset_ARChetype Disease CRF_H5Nx,preset_ARChetype Syndromic CRF_VHF,preset_ARChetype Syndromic CRF_Arbovirus,preset_ARChetype Syndromic CRF_ARI,preset_ARChetype Syndromic CRF_Encephalitis,preset_ARChetype Disease CRF_Chikungunya,Value,Translation Reviewers
+adenovirus,,,,,,,,1.0,,,,,,1,0
+Infección por el virus de los Andes (hantavirus),359761005,SNOMED,,,,,,,,,,,,2,0
+Fiebre hemorrágica argentina (virus Junín),58868000,SNOMED,,,,,,,1.0,,,,,3,0
+Influenza aviar A H7N9/ H5N1/ H5N8/ H7N7,NEW CODE (609444009 | Influenza A virus subtype H7N9 (organism) |772827006 | Influenza A virus subtype H5N1 (organism) |715346008 | Influenza A virus subtype H7N7 (organism) |708527000 | Influenza A virus subtype H5N8 (organism) |,,,,,,,1.0,,,,,,4,0
+Infección bacteriana,87628006,SNOMED,,,,,,,,,,,,5,0
+Fiebre hemorrágica boliviana (virus Machupo),67247008,SNOMED,,,,,,,1.0,,,,,6,0
+COVID-19 (SARS-CoV-2),840539006,SNOMED,1.0,1.0,,,,1.0,,,1.0,,,7,0
+Varicela (varicela),58750007,SNOMED,,,,1.0,1.0,,,,,,,8,0
+Fiebre hemorrágica de Crimea Congo (FHEC),43489008,SNOMED,,,,,,,1.0,,,,,9,0
+Dengue,38362002,SNOMED,1.0,,1.0,,,,1.0,1.0,,,1.0,10,0
+Enfermedad por el virus del Ébola (EVE),37109004,SNOMED,,,,,,,1.0,,,,,11,0
+enterovirus,53648006,SNOMED,,,,,,,,,,,,12,0
+Exposición al agente QBRN,,,,,,,,,,,,,,13,0
+Exposición a energía nociva,,,,,,,,,,,,,,14,0
+VHS,88594005,SNOMED,,,,,,,,,,,,15,0
+"Hepatitis (general, no especificada)",40468003,SNOMED,,,1.0,,,,,,,,,16,0
+Infección por el virus del herpes simple (VHS),88594005,SNOMED,,,,1.0,1.0,,,,,,,17,0
+Infección por el virus de la inmunodeficiencia humana (infección por VIH),86406008,SNOMED,,,,1.0,1.0,,,,,,,18,0
+Gripe A H1N1,442352004,SNOMED,,,,,,,,,,,,19,0
+Gripe A H5N1,772827006,SNOMED,,,,,,,,,,,,20,0
+Gripe A H5N8,708527000,SNOMED,,,,,,,,,,,,21,0
+Gripe A H7N7,715346008,SNOMED,,,,,,,,,,,,22,0
+Gripe A H7N9,609444009,SNOMED,,,,,,,,,,,,23,0
+Virus de la gripe A,407479009,SNOMED,,,,,,,,,,,,24,0
+virus de la influenza B,407480007,SNOMED,,,,,,,,,,,,25,0
+virus de la influenza,725894000,SNOMED,,,,,,,,,,,,26,0
+JE,52947006,SNOMED,,,,,,,,,,,,27,0
+Fiebre de Lassa,19065005,SNOMED,,,,,,,1.0,,,,,28,0
+Enfermedad del virus de lujo,721784007,SNOMED,,,,,,,1.0,,,,,29,0
+Enfermedad por el virus de Marburgo (MVD),77503002,SNOMED,,,,,,,1.0,,,,,30,0
+Sarampión,14189004,SNOMED,,,,,,,,,,,,31,0
+Síndrome respiratorio de Oriente Medio (MERS),6.51E+11,SNOMED,,,,,,,,,,,,32,0
+mpox,359814004,SNOMED,1.0,,,1.0,1.0,,,,,,,33,0
+Nipah,406597005,SNOMED,,,,,,,,,,,,34,0
+bolsa de oro,72880002,SNOMED,,,,,,,,1.0,,,,35,0
+Peste neumónica (Yersinia pestis),38976008,SNOMED,,,,,,,,,,,,36,0
+Infección por virus respiratorio sincitial (VRS),55256001,SNOMED,,,,,,,,,1.0,,,37,0
+Hepatitis pediátrica aguda grave,37871000 | Acute hepatitis (disorder) |24484000 | Severe (severity modifier) (qualifier value) |255398004 | Childhood (qualifier value) |,SNOMED,,,,,,,,,,,,38,0
+Síndrome respiratorio agudo severo (SARS-no COVID-19),398447004,SNOMED,,,,,,,,,1.0,,,39,0
+Fiebre severa con síndrome de trombocitopenia (SFTS),722401001,SNOMED,,,,,,,,,1.0,,,40,0
+influenza indefinida,155559006,SNOMED,,,,,,,,,1.0,,,41,0
+Fiebre del Valle del Rift,6142004,SNOMED,,,,,,,,,,,,42,0
+Neumonía adquirida en la comunidad,233604007,SNOMED,,,,,,,,,1.0,,,43,0
+Neumonía adquirida en el hospital,4441000,SNOMED,,,,,,,,,1.0,,,44,0
+Enfermedad similar a la influenza,195662009,SNOMED,,,,,,,,,1.0,,,45,0
+IRA viral,312118003,SNOMED,,,,,,,,,1.0,,,46,0
+Chikungunya,37109004,SNOMED,,,,,,,,1.0,,,1.0,47,0
+Zika,373722009,SNOMED,,,,,,,,1.0,,,1.0,48,0
+leptospirosis,61462000,SNOMED,,,,,,,,,,,1.0,49,0
+Encefalitis,45170000,SNOMED,,,,,,,,,,1.0,,50,0
+Meningitis,7180009,SNOMED,,,,,,,,,,1.0,,51,0
+Fiebre hemorrágica del Chapare (FHC),716584007,SNOMED,,,,,,,1.0,,,,,52,0

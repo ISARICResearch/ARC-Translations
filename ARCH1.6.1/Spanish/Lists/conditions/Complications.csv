@@ -1,0 +1,36 @@
+Condition,Code,Library,Value,Selected,Translation Reviewers
+Síndrome de dificultad respiratoria aguda (SDRA),67782005,SNOMED,1,1,0
+Bacteriemia,5758002,SNOMED,2,1,0
+Infarto de miocardio,22298006,SNOMED,3,1,0
+Hallazgo neurológico,102957003,SNOMED,4,1,0
+Neumonía,233604007,SNOMED,5,1,0
+Embolia pulmonar,59282003,SNOMED,6,1,0
+Choque séptico,76571007,SNOMED,7,1,0
+Trastorno de coagulación adquirido,234466008,SNOMED,8,1,0
+Síndrome de insuficiencia renal aguda,14669001,SNOMED,9,1,0
+Sangría,131148009,SNOMED,10,1,0
+Paro cardiaco,410429000,SNOMED,11,1,0
+Accidente cerebrovascular cardioembólico,413758000,SNOMED,12,1,0
+Choque cardiogénico,89138009,SNOMED,13,1,0
+Accidente cerebrovascular cerebeloso,16371781000119100,SNOMED,14,1,0
+Descompensación,87228002,SNOMED,15,1,0
+Trombosis venosa profunda,128053003,SNOMED,16,1,0
+Coagulación intravascular diseminada (CID),67406007,SNOMED,17,1,0
+empiema,312682007,SNOMED,18,1,0
+Encefalitis,45170000,SNOMED,19,1,0
+Accidente cerebrovascular hemorrágico,1078001000000100,SNOMED,20,1,0
+Neumonía adquirida en el hospital,425464007,SNOMED,21,1,0
+encefalopatía isquémica,389100007,SNOMED,22,1,0
+Accidente cerebrovascular isquémico,422504002,SNOMED,23,1,0
+hígado grande,80515008,SNOMED,24,1,0
+Meningitis,7180009,SNOMED,25,1,0
+Síndrome inflamatorio multisistémico en adultos,1119306006,SNOMED,26,1,0
+Síndrome inflamatorio multisistémico en niños.,895448002,SNOMED,27,1,0
+Neumotórax,36118008,SNOMED,28,1,0
+Sangrado gastrointestinal recurrente,307296008,SNOMED,29,1,0
+Infección urinaria recurrente,197927001,SNOMED,30,1,0
+Septicemia,91302008,SNOMED,31,1,0
+Accidente cerebrovascular trombótico,371040005,SNOMED,32,1,0
+Isquemia cerebral transitoria,266257000,SNOMED,33,1,0
+Hipotensión transitoria,94501000000000,SNOMED,34,1,0
+Neumonía asociada al ventilador,429271009,SNOMED,35,1,0

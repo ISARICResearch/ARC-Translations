@@ -1,0 +1,14 @@
+Outcome,Code,Selected,preset_ARChetype Disease CRF_Mpox,preset_ARChetype Disease CRF_Mpox Pregnancy and Paediatric,preset_ARChetype Syndromic CRF_ARI,Value,Translation Reviewers
+Todas las lesiones están completamente resueltas y sin complicaciones graves.,,,1.0,1.0,,1,0
+Todas las lesiones ya no están activas y no hay complicaciones graves.,,,1.0,1.0,,2,0
+Muerte,,1.0,1.0,1.0,1.0,3,0
+Alta viva - motivos médicos,,1.0,1.0,1.0,1.0,4,0
+Alta viva: preferencia del paciente,,1.0,1.0,1.0,1.0,5,0
+Retiro anticipado,,1.0,1.0,1.0,1.0,6,0
+Pérdida de seguimiento,,1.0,1.0,1.0,1.0,7,0
+Nunca se desarrollaron lesiones ni complicaciones graves.,,,1.0,1.0,,8,0
+Una o más lesiones están activas y no presentan complicaciones graves.,,,1.0,1.0,,9,0
+Cuidados paliativos,,,,,1.0,10,0
+Complicación grave y/o rehospitalización por infección con patógeno de interés,,,1.0,1.0,1.0,11,0
+Todavía hospitalizado,,1.0,1.0,1.0,1.0,12,0
+Traslado a otra instalación,,1.0,1.0,1.0,1.0,13,0
