@@ -5,7 +5,7 @@ import re
 from bridge.arc.arc_api import ArcApiClient
 from utils import init_dir
 import translation.ArchTranslation as ArchTranslation, translation.PaperTranslation as PaperTranslation, translation.ListTranslation as ListTranslation
-from translation.GenerateSource import generate_english_source
+from translation.GenerateSource import generate_english_source, retrieve_supplemental_phrases
 
 def _extract_version_nums(s):# return tuple of integer for ARC versioning "ARCH1.2.2-beta" -> (1,2,2)
     nums = re.findall(r'\d+', s)
@@ -55,21 +55,24 @@ def run_translation(version):
     arc_client = ArcApiClient()
 
     # === Initialize == #
-
     #   Set Root directory
     root_arch_t = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-    #print("root_arch_t:"+root_arch_t)
-    
     #   Set Version directory
     arch_dir_path_des=root_arch_t+'/'+arc_client.get_arch_version_string(version)+'/'
     init_dir(arch_dir_path_des)
     #   Set English Source directory
     path_src = arch_dir_path_des+'English/'
     init_dir(path_src)
-    
+    #   Get all versions from arc
+    all_versions = arc_client.get_arc_version_list()
+    #   Get previous verion directory
+    version_previous=get_previous_version(all_versions, version)
+    arch_dir_path_prev = root_arch_t+'/'+arc_client.get_arch_version_string(version_previous)+'/'
 
-    #   Generate Source -> to-be-tranlated
-    generate_english_source(path_src, arc_client, version)
+
+    # ==== English ==== #   Generate source files to translate into target languages.
+    generate_english_source(path_src, arc_client, version, arch_dir_path_prev+'English/')
+
 
     # ====== ARC ====== #
     arch_file_path_src=path_src+'ARCH.csv'
@@ -95,32 +98,33 @@ def run_translation(version):
 
     ###Translations parameters:
     #Language definitions to translate [('Language', 'Lang code')]
-    #langs=[('Spanish', 'es')]
-    langs=[('French', 'fr'),('Spanish', 'es'),('Portuguese', 'pt')]
-
-    #get all versions from arch repository
-    all_versions = arc_client.get_arc_version_list()
+    langs=[('Spanish', 'es')]
+    #langs=[('French', 'fr'),('Spanish', 'es'),('Portuguese', 'pt')]
 
     #Translation execution
     for lang in langs:
+        print()
         print("start lang: "+lang[0])
         while True:
-            previous_version_str=get_previous_version(all_versions, version)
-            arch_dir_path_prev = root_arch_t+'/'+arc_client.get_arch_version_string(previous_version_str)+'/'
             arc_translated_file=arch_dir_path_prev+lang[0]+'/ARCH.csv'
-            lists_translated_dir=arch_dir_path_prev+lang[0]+'/Lists/'
+            lists_translated_dir=arch_dir_path_prev+lang[0]+'/Lists/' 
             ##Paper_like_details not included
             if os.path.exists(arc_translated_file):
                 print("Previous translation directory found: "+arch_dir_path_prev+lang[0])
                 break
             else:
                 #most_recent_version_str = previous_version_str
-                if previous_version_str == None:
+                if version_previous == None:
                     print("Previous translation directory is None: ")
                     break
         ttl=0#counter for total variables in lists
         ttt=0#counter for total variables not translated because found in previous translations in lists
-        
+
+        # Handle copying supplemental phrase
+        init_dir(arch_dir_path_des+lang[0])
+        retrieve_supplemental_phrases(arch_dir_path_des+lang[0]+'/', arch_dir_path_prev+lang[0]+'/');
+
+        # Translate lists
         for li in lists:
             total=ListTranslation.translate_lists(f'{lists_file_path_src}/', li, arch_dir_path_des, lang, lists_translated_dir)
             print("LIST: "+li+" Translations found in previous: "+str(total[0])+" out of "+str(total[1]))
@@ -136,4 +140,7 @@ def run_translation(version):
         #ux=input("Quiere continuar con la siguiente?")##solo para pruebas    
         arch_t=ArchTranslation.translate_arch(arch_file_path_src, arch_col_translate, arch_dir_path_des, lang, arc_translated_file, arch_dir_path_prev)    
         print(f"ARCH: Total vars found in previous translations vs total: {arch_t[0]}/{arch_t[1]}")
+
+
+
         print("--------")
