@@ -5,7 +5,7 @@ import re
 from bridge.arc.arc_api import ArcApiClient
 from utils import init_dir
 import translation.ArchTranslation as ArchTranslation, translation.PaperTranslation as PaperTranslation, translation.ListTranslation as ListTranslation
-
+from translation.GenerateSource import generate_english_source
 
 def _extract_version_nums(s):# return tuple of integer for ARC versioning "ARCH1.2.2-beta" -> (1,2,2)
     nums = re.findall(r'\d+', s)
@@ -49,7 +49,7 @@ from bridge.arc.arc_api import ArcApiClient
 def run_translation(version):
 
     ## == Step 1 == ##
-    # Set Up Directories and Paths #
+    # Set Up Directories and English Source #
 
     # Init arc client
     arc_client = ArcApiClient()
@@ -66,10 +66,14 @@ def run_translation(version):
     #   Set English Source directory
     path_src = arch_dir_path_des+'English/'
     init_dir(path_src)
+    
+
+    #   Generate Source -> to-be-tranlated
+    generate_english_source(path_src, arc_client, version)
 
     # ====== ARC ====== #
     arch_file_path_src=path_src+'ARCH.csv'
-    arch_col_translate=['Form', 'Section', 'Question', 'Answer Options', 'Definition', 'Completion Guideline']
+    arch_col_translate=['Form', 'Section', 'Question', 'Answer Options', 'Definition', 'Completion Guideline']   
 
     # === Paperlike === # 
     paper_file_path_src=path_src+'paper_like_details.csv'
@@ -86,13 +90,12 @@ def run_translation(version):
 
     print("***")
 
-
     ## == Step 2 == ##
     # Run through translations #
 
     ###Translations parameters:
     #Language definitions to translate [('Language', 'Lang code')]
-    #langs=[('Spanish', 'es')]#langs=[('French', 'fr'),('Spanish', 'es'),('Portuguese', 'pt')]
+    #langs=[('Spanish', 'es')]
     langs=[('French', 'fr'),('Spanish', 'es'),('Portuguese', 'pt')]
 
     #get all versions from arch repository
