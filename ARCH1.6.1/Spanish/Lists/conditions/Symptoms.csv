@@ -43,7 +43,7 @@ Irritabilidad,R45.4,ICD10,55929007,SNOMED,,,,41,0
 picazón en el ojo,H57.8,ICD10,74776002,SNOMED,,,,42,0
 Ictericia,R17,ICD10,18165001,SNOMED,,,,43,0
 Dolor en las articulaciones (artralgia),M25.5,ICD10,57676002,SNOMED,,,,44,0
-Queratitis,H16.9,ICD10,5888003,SNOMED,,,,45,0
+queratitis,H16.9,ICD10,5888003,SNOMED,,,,45,0
 Debilidad/parálisis de las extremidades (monoplejía),G83.3,ICD10,713514005,SNOMED,,,,46,0
 Edema localizado,R60.0,ICD10,274724004,SNOMED,,,,47,0
 Pérdida de apetito (anorexia),R63.0,ICD10,79890006,SNOMED,,,,48,0
@@ -71,7 +71,7 @@ Lesión cutánea,,,,SNOMED,1.0,,,69,0
 erupción cutánea,R21,ICD10,271807003,SNOMED,,1.0,,70,0
 Trastorno del sueño,F51.9,ICD10,39898005,SNOMED,,,,71,0
 Estornudos,R06.7,ICD10,162367006,SNOMED,,,1.0,72,0
-Dolor de garganta (Dolor de garganta),R07.0,ICD10,267102003,SNOMED,,,1.0,73,0
+Dolor de garganta (Dolor en la garganta),R07.0,ICD10,267102003,SNOMED,,,1.0,73,0
 Alteraciones del habla,R47.9,ICD10,29164008,SNOMED,,,,74,0
 Hematomas espontáneos (equimosis espontáneas),R23.3,ICD10,161887000,SNOMED,,,,75,0
 Sudoración (hiperhidrosis),R61,ICD10,312230002,SNOMED,,,,76,0
